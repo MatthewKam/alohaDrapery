@@ -1,0 +1,699 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ece8e1;
+}
+.ib{display:inline-block;vertical-align: top;}
+.tar{text-align: right;}
+.tal{text-align: left;}
+.tac{text-align: center;}
+.hide{display: none;}
+
+/*TOPBAR*/
+#topbar{
+	background-color:#99cc66;
+	height: 50px;
+}
+#topbarwrap{
+	width: 1100px;
+	margin: 0 auto;
+	text-align:center;
+}
+div#topbarcopy {
+    margin-top: 15px;
+    width: 590px;
+}
+div#topbuttonwrap {
+    width: 150px;
+}
+#topbarbutton {
+    background-color: #ff9966;
+    padding: 10px;
+    color: white;
+    box-shadow: 2px 2px 2px lightgrey;
+    margin-top: 5px;
+    margin-left: 20px;
+    width: 120px;
+        border-radius: 5px;
+}
+#topbarbutton:hover{
+	box-shadow: none;
+    margin-top: 7px;
+    margin-left:22px;
+}
+#topbuttona{text-decoration:none;}
+
+/*INDEXWRAP*/
+#index_wrap{
+	width: 1100px;
+	margin:0 auto;
+}
+
+/*NAVBAR*/
+div#head {
+    background-color: white;
+}
+div#headnavwrap a {
+    color: black;
+}
+div#headtop {
+	width: 1100px;
+	margin:0 auto;
+    border-bottom: 1px solid lightgray;
+    padding: 10px 0;
+}
+#logo1{
+	width:100px;
+	height:50px;
+	border: 1px solid lightgrey;
+	margin-right:10px;
+}
+#logotitle {
+    color: #cc0033;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: -.6px;
+    margin-top: 10px;
+}
+div#logotitle span {
+    font-size: 22px;
+    font-style: italic;
+    font-weight: normal;
+}
+div#headnavwrap {
+    width: 1100px;
+    margin:0 auto;
+    text-align: center;
+}
+#headnav .navbar {
+    width: 215px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+div#headnav {
+    border-bottom: 1px solid lightgrey;
+}
+
+
+/*SECTION1*/
+
+/*CAROUSEL*/
+.carousel {
+    position: relative;
+    height: 600px;
+    width: 1080px;
+    margin: 0 auto;
+    border: 10px solid white;
+    margin-top: 30px;
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height:100%;
+}
+
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+.carousel-item .carouselimages {
+    display: block;
+}
+
+.carousel-control {
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    top: 240px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+    display: block;
+}
+.carousel-open{
+	visibility:hidden;
+}
+.leftside {
+    width: 50px;
+    height: 50px;
+    border-top: 2px solid lightgrey;
+    border-left: 2px solid lightgrey;
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 25px;
+}
+.rightside {
+    width: 50px;
+    height: 50px;
+    border-top: 2px solid lightgrey;
+    border-right: 2px solid lightgrey;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position:absolute;
+    margin-top: 50px;
+    right: 25px;
+}
+.carousel-control.prev{
+    width: 74px;
+    height: 150px;
+    position: absolute;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.carousel-control.prev:hover {
+    background-color: rgba(0,0,0,.5);
+    
+}
+.carousel-control.next{
+    width: 74px;
+    height: 150px;
+    position: absolute;
+    border-radius: 5px;
+    margin-left: 10px;
+    right:20px;
+}
+.carousel-control.next:hover {
+    background-color: rgba(0,0,0,.5);
+    
+}
+.carousel-control:hover {
+
+}
+#carousel1 {
+    background: url(../images/pairPanel.jpg)center top no-repeat;
+    height: 600px;
+    width: 1100px;
+    margin: 0 auto;
+    background-position: -150px -340px;
+    background-size: 115%;
+}
+#carousel2{
+    background: url(../images/fabrics.png)center top no-repeat;
+    height: 600px;
+    width: 1100px;
+    margin: 0 auto;
+    background-size: contain;
+}
+#carousel3{
+    background: url(../images/fabrics.png)center top no-repeat;
+    height: 600px;
+    width: 1100px;
+    margin: 0 auto;
+    background-size: contain;
+}
+div.carouselcopy {
+    padding: 50px;
+    background-color: rgba(255,255,255,.6);
+    text-align: center;
+    height: 110px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+
+/*SECTION2*/
+div#section2{
+    border-top: 2px solid lightgrey;
+    margin-top: 30px;
+    
+}
+div#aloha {
+    padding-top: 30px;
+    width: 960px;
+    margin: 0 auto;
+}
+div#aloha p {
+    margin: 0;
+    line-height: 24px;
+    text-align: center;
+}
+#section2 h1#alohadrapery {
+    text-align: center;
+    border-bottom: 1px solid lightgrey;
+    width: 350px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+/*SECTION3*/
+
+/*LEFT*/
+div#section3 {
+    border-top: 2px solid lightgrey;
+    margin-top: 30px;
+}
+#singlePanel{
+    background:url(../images/singlePanel.jpg)center top no-repeat;
+}
+div#singlePanel {
+        width: 440px;
+    height: 880px;
+    background-size: contain;
+    margin-top: 30px;
+    border: 10px solid white;
+}
+
+/*RIGHT*/
+div#samples {
+    padding-left: 40px;
+    width: 595px;
+    padding-top: 30px;
+}
+#samplestop {
+    
+}
+a#placeorder {
+    text-decoration: none;
+}
+#samplestop p {
+    margin: 0;
+    text-align: center;
+    line-height: 40px;
+}
+h1#sampletitle {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    
+}
+div#freesamples {
+    background-color: #ff9966;
+    padding: 10px;
+    color: white;
+    box-shadow: 2px 2px 2px lightgrey;
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 240px;
+    text-align: center;
+        border-radius: 5px;
+}
+a#freesamplelink {
+    text-decoration: none;
+}
+
+div#freesamples:hover{
+    box-shadow: none;
+    margin-top: 7px;
+    margin-left:12px;
+}
+div.swatcheswrap {
+    width: 100px;
+    height: 100px;
+    border: 5px solid white;
+    margin: 17px;
+    margin-bottom: 0px;
+    overflow: hidden;
+}
+div#samplewrap {
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 280px;
+}
+.swatches {
+    height: 300px;
+    width: 300px;
+    margin-left: -10px;
+    margin-top: -10px;
+    border: 10px solid white;
+}
+.swatcheswrap:hover .swatches:nth-child(1n){
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.swatcheswrap:hover .swatches:nth-child(1n) .description{
+    display:block;
+}
+#swatch3wrap:hover #swatch3{
+    margin-left: -215px;
+}
+#swatch4wrap:hover #swatch4{
+    margin-left: -215px;
+}
+#swatch7wrap:hover #swatch7{
+    margin-left: -215px;
+}
+#swatch8wrap:hover #swatch8{
+    margin-left: -215px;
+}
+#swatch1{
+    background:url(../images/windsor-ivory.jpg)center top no-repeat;
+}
+#swatch2{
+    background:url(../images/roclon-suede.jpg)center top no-repeat;
+}
+#swatch3{
+    background:url(../images/new-embassy-satin-natural.jpg)center top no-repeat;
+}
+#swatch4{
+    background:url(../images/new-omega-linen.jpg)center top no-repeat;
+}
+#swatch5{
+    background:url(../images/calcutta-natural.jpg)center top no-repeat;
+}
+#swatch6{
+    background:url(../images/frosted-natural.jpg)center top no-repeat;
+}
+#swatch7{
+    background:url(../images/windsor-ivory.jpg)center top no-repeat;
+}
+#swatch8{
+    background:url(../images/windsor-ivory.jpg)center top no-repeat;
+}
+ #swatch9{
+    background:url(../images/windsor-ivory.jpg)center top no-repeat;
+}
+#swatch10{
+    background:url(../images/windsor-ivory.jpg)center top no-repeat;
+}
+select.formfields {
+    height: 38px;
+    border: 1px solid lightgrey;
+    width: 144px;
+    margin-top: 10px;
+        margin-left: 1px;
+    font-size: 16px;
+}
+a.orderb{
+    text-decoration: none;
+}
+div.swatches .description .dleftcopy p {
+    margin-bottom: 10px;
+}
+
+
+.orderbutton {
+    background-color: #ff9966;
+    padding: 10px;
+    color: white;
+    box-shadow: 2px 2px 2px lightgrey;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 140px;
+    text-align: center;
+}
+.orderbutton:hover{
+    box-shadow: none;
+    margin-top: 22px;
+    margin-left:22px;
+}
+div.productinfo {
+    text-align: center;
+    margin-top: 10px;
+    width: 140px;
+}
+.description {
+    display: none;
+    position: absolute;
+    width: 280px;
+    background-color: rgba(255,255,255,0.6);
+    padding: 10px;
+    text-align: center;
+    bottom: 0;
+}
+.description h1, p {
+    margin: 0;
+}
+.dleftcopy.ib {
+}
+#getquote p,h1{
+    margin:0;
+}
+#getquote h1 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+#quote{
+    padding-top: 20px;
+    border-top: 2px solid lightgrey;
+    margin-top: 30px;
+}
+#getquote p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.label {
+    text-align: center;
+}
+input.formfields {
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+        margin-left: 1px;
+    margin-top: 10px;
+    font-size: 18px;
+        width: 140px;
+    padding-left: 10px;
+}
+#totalbutton {
+    background-color: #ff9966;
+    padding: 10px;
+    color: white;
+    box-shadow: 2px 2px 2px lightgrey;
+    margin-top: 15px;
+    margin-left: 60px;
+    width: 240px;
+    text-align: center;
+        border-radius: 5px;
+}
+#totalbutton:hover{
+    margin-left:62px;
+    margin-top:17px;
+}
+div#totals {
+    padding-left: 250px;
+    line-height: 24px;
+        margin-top: 30px; 
+            width: 330px;
+}
+div#freight {
+    padding-left: 205px;
+}
+#totals .label.ib {
+    width: 180px;
+    text-align: right;
+    margin-right: 20px;
+
+}
+
+
+/*FOOTER*/
+div#index_footer {
+    margin-top: 30px;
+    border-top: 2px solid lightgrey;
+    padding-top: 30px;
+    background-color: rgba(255,255,255,0.7);
+}
+#footercontent{
+    width:1100px;
+    margin:0 auto;
+    padding-bottom: 40px;
+}
+div#footerleft {
+    line-height: 40px;
+    width: 340px
+}
+div#footermid {
+    width: 340px;
+}
+#footerright{
+    width:340px;
+    padding: 30px;
+    padding-top: 0;
+    line-height: 30px;
+    text-align: right;
+}
+#footerright div#logo {
+    width: 150px;
+    height: 50px;
+    border: 1px solid lightgrey;
+    margin-left: 190px;
+}
+div#footerleft a {
+    color: black;
+    text-decoration: none;
+}
+div#footerleft a:hover {
+    text-decoration: underline;
+}
+#popup {
+    display: none;
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 9999;
+    clear: none;
+    background-color: rgba(0,0,0,0.5);
+}
+span.header {
+
+    font-size: 30px;
+    font-weight: bold;
+}
+.header {
+    color: #C00;
+}
+#popupmain {
+    border: 3px solid #d6d6d6;
+    background-color: white;
+    width: 760px;
+    height: 440px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -240px 0 0 -400px;
+    padding: 20px;
+}
+#popupcontent {
+    width: 760px;
+    height: 400px;
+    overflow-x: hidden;
+}
+#popupclose {
+    width: 760px;
+    height: 30px;
+    padding-top: 10px;
+    text-align: right;
+    cursor: pointer;
+}
+div.close_legal {
+    height: 30px;
+    width: 140px;
+    background: -webkit-linear-gradient(#78c44c, #427422);
+    background: -o-linear-gradient(#78c44c, #427422);
+    background: -moz-linear-gradient(#78c44c, #427422);
+    background: linear-gradient(#78c44c, #427422);
+    border-radius: 5px;
+    border: 1px solid #78c44c;
+    box-shadow: 0px 2px 4px black;
+        text-align: center;
+    color: white;
+    float: right;
+    margin-top: 20px;
+    cursor:pointer;
+}
+div.close {
+    width: 138px;
+    text-align: center;
+    border-radius: 4px;
+    border-top: 1px solid white;
+    color: white;
+    font-size: 16px;
+    margin-left: 1px;
+}
+a.footerlink{
+    cursor:pointer;
+}
+a.legal_trigger {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+a.legal_trigger:hover {
+    text-decoration: underline;
+}
+#warranty{
+    display:none;
+}
+#returns{
+    display:none;
+}
+#privacy{
+    display:none;
+}
+div.legal_popover {
+    z-index: 11;
+    top: 0;
+    left: 0;
+    padding: 40px;
+    border: 1px solid grey;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+.legal_contain {
+    background-color: white;
+    width: 500px;
+    height: 400px;
+    padding: 40px;
+    padding-top: 30px;
+        margin-top: 5%;
+    margin-left: 20%;
+}
+.contentcontain {
+    height: 370px;
+    overflow-y: scroll;
+}
+span.headerLegal {
+    font-weight: bold;
+    font-size: 24px;
+}
+.contentcontain p {
+    margin-top: 20px;
+}
+
+
+div#facefabric {
+    background-color: #39a6f4;
+    padding: 20px 0;
+    border-radius: 10px 10px 0 0;
+}
+div#lining {
+    background-color: #6bc1ff;
+    padding: 20px 0;
+    border-radius: 0 0 10px 10px;
+}
+.swatchestitles {
+    font-weight: bold;
+    font-size: 24px;
+    font-style: italic;
+}
+
+div#lininginfo {
+    width: 290px;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 40px;
+}
+div#lininginfo a {
+    color: black;
+    text-decoration: none;
+}
+

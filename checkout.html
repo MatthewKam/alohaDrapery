@@ -1,0 +1,487 @@
+<!DOCTYPE html/>
+<html>
+<head>
+	<title>AlohaDrapery.com</title>
+
+	<link rel="stylesheet" type="text/css" href="css/checkout.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+
+</head>
+<body id="checkout">
+	<div id="head">
+		<div id="headtop">
+			<div class="ib" id="logo1"></div>
+			<div class="ib" id="logotitle">AlohaDrapery.com <span>- Windows of Opportunity</span></div>
+		</div>
+		<div id="headnav">
+			<div id="headnavwrap">
+				<a href="index.html#aloha"><div class="ib navbar">About Us</div></a>
+				<a href="checkout.html"><div class="ib navbar">Order Now</div></a>
+				<a href="index.html#samples"><div class="ib navbar">Free Samples</div></a>
+				<a href="index.html#quote"><div class="ib navbar">Get A Quote</div></a>
+				<a href="#"><div class="ib navbar">Contact</div></a>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="checkout_wrap">
+		<div id="section1">
+			<div id="s1left" class="ib">
+				<div id="orderformwrap">
+					<h1 id="create">Create Your Own Custom Drapery</h1>
+					<div id="orderform">
+						<div id="toplabels">
+							<div class="toplabels ib">Quantity</div>
+							<div class="toplabels ib" id="fabric">Fabric</div>
+							<div class="toplabels ib">Width</div>
+							<div class="toplabels ib">Height</div>
+							<a class="lrreturn legal_trigger" rel="describelr" href="javascript:void(0);"><div id="leftreturn" class="toplabels ib">Left Return<span class="hide"id="lrquestion">?</span></div></a>
+							<a class="lrreturn legal_trigger" rel="describerr" href="javascript:void(0);"><div id="rightreturn" class="toplabels ib">Right Return<span class="hide"id="rrquestion">?</span></div></a>
+						</div>
+						<div>
+							<div class="quantity ib line1" id="q1">
+								<input placeholder="11" type="text" class="orderinfo quantity"/>
+							</div>
+							<div class="color ib line1" id="c1">
+								<select>
+									<option selected>Select Fabric</option>
+									<option value='breeze'>Windsor/Ivory</option>
+									<option>Roclon Suede</option>
+									<option>New Embassy Satin/Natural</option>
+									<option>New Omega/Linen</option>
+									<option>Calcutta/Natural</option>
+									<option>Frosted/Natural</option>
+									<option>123kjl;132</option>
+									<option>123kjl;132</option>
+									<option>123kjl;132</option>
+								</select>
+							</div>
+							<div class="width ib line1" id="w1">
+								<input placeholder="200 inches" type="text" class="orderinfo"/>
+							</div>
+							<div class="height ib line1" id="h1">
+								<input placeholder="60 inches" type="text" class="orderinfo"/>
+							</div>
+							<div class="leftreturn ib line1" id="lr1">
+								<input placeholder="10 inches" type="text" class="orderinfo"/>
+							</div>
+							<div class="rightreturn ib line1" id="rr1">
+								<input placeholder="10 inches" type="text" class="orderinfo"/>
+							</div>
+							<button onclick="addToCart(this)">Test</button>
+							<div class="aandd">
+								<div id="addmore1" class="addmore ib">Add</div>
+							</div>
+						</div>
+						<div id="add2" class="hide">
+							<div class="quantity ib line2" id="q2">
+								<input placeholder="11" type="text" class="orderinfo"/>
+							</div>
+							<div class="color ib line2" id="c2">
+								<select>
+									<option selected>Select Fabric</option>
+									<option value='breeze'>Windsor/Ivory</option>
+									<option>Roclon Suede</option>
+									<option>New Embassy Satin/Natural</option>
+									<option>New Omega/Linen</option>
+									<option>Calcutta/Natural</option>
+									<option>Frosted/Natural</option>
+									<option>123kjl;132</option>
+									<option>123kjl;132</option>
+									<option>123kjl;132</option>
+								</select>
+							</div>
+							<div class="width ib line2" id="w2">
+								<input placeholder="200 inches" type="text" class="orderinfo"/>
+							</div>
+							<div class="height ib line2" id="h2">
+								<input placeholder="60 inches" type="text" class="orderinfo"/>
+							</div>
+							<div class="leftreturn ib line1" id="lr2">
+								<input placeholder="10 inches" type="text" class="orderinfo"/>
+							</div>
+							<div class="rightreturn ib line1" id="rr2">
+								<input placeholder="10 inches" type="text" class="orderinfo"/>
+							</div>
+							<button onclick="addToCart(this)">Test</button>
+							<div class="aandd">
+
+								<div id="delete2" class="addmore ib">Delete</div>
+								<div id="addmore2" class="addmore ib">Add</div>
+							</div>
+						</div>
+
+						<div id="add3" class="hide">
+							<div class="quantity ib line3" id="q3">
+								<input placeholder="11" type="text" class="orderinfo"/>
+							</div>
+							<div class="color ib line3" id="c3">
+								<select>
+									<option selected>Select Fabric</option>
+									<option>Windsor/Ivory</option>
+									<option>Roclon Suede</option>
+									<option>New Embassy Satin/Natural</option>
+									<option>New Omega/Linen</option>
+									<option>Calcutta/Natural</option>
+									<option>Frosted/Natural</option>
+									<option>123kjl;132</option>
+									<option>123kjl;132</option>
+									<option>123kjl;132</option>
+								</select>
+							</div>
+							<div class="width ib line3" id="w3">
+								<input placeholder="200 inches" type="text" class="orderinfo"/>
+							</div>
+							<div class="height ib line3" id="h3">
+								<input placeholder="60 inches" type="text" class="orderinfo"/>
+							</div>
+							<div class="leftreturn ib line1" id="lr3">
+								<input placeholder="10 inches" type="text" class="orderinfo"/>
+							</div>
+							<div class="rightreturn ib line1" id="rr3">
+								<input placeholder="10 inches" type="text" class="orderinfo"/>
+							</div>
+							<button onclick="addToCart(this)">Test</button>
+							<div class="aandd">
+
+								<div id="delete3" class="addmore ib">Delete</div>
+								<div id="addmore3" class="addmore ib">Add</div>
+							</div>
+						</div>
+
+						<div id="add4" class="hide">
+							<div class="quantity ib line4" id="q4">
+								<input placeholder="11" type="text" class="orderinfo"/>
+							</div>
+							<div class="color ib line4" id="c4">
+								<select>
+									<option selected>Select Fabric</option>
+									<option>Windsor/Ivory</option>
+									<option>Roclon Suede</option>
+									<option>New Embassy Satin/Natural</option>
+									<option>New Omega/Linen</option>
+									<option>Calcutta/Natural</option>
+									<option>Frosted/Natural</option>
+									<option>123kjl;132</option>
+									<option>123kjl;132</option>
+									<option>123kjl;132</option>
+								</select>
+							</div>
+							<div class="width ib line4" id="w4">
+								<input placeholder="200 inches" type="text" class="orderinfo"/>
+							</div>
+							<div class="height ib line4" id="h4">
+								<input placeholder="60 inches" type="text" class="orderinfo"/>
+							</div>
+							<div class="leftreturn ib line1" id="lr4">
+								<input placeholder="10 inches" type="text" class="orderinfo"/>
+							</div>
+							<div class="rightreturn ib line1" id="rr4">
+								<input placeholder="10 inches" type="text" class="orderinfo"/>
+							</div>
+							<button onclick="addToCart(this)">Test</button>
+							<div class="aandd">
+
+								<div id="delete4" class="addmore ib">Delete</div>
+								<div id="addmore4" class="addmore ib">Add</div>
+							</div>
+						</div>
+
+						<div id="add5" class="hide">
+							<div class="quantity ib line5" id="q5">
+								<input placeholder="11" type="text" class="orderinfo"/>
+							</div>
+							<div class="color ib line5" id="c5">
+								<select>
+									<option selected>Select Fabric</option>
+									<option>Windsor/Ivory</option>
+									<option>Roclon Suede</option>
+									<option>New Embassy Satin/Natural</option>
+									<option>New Omega/Linen</option>
+									<option>Calcutta/Natural</option>
+									<option>Frosted/Natural</option>
+									<option>123kjl;132</option>
+									<option>123kjl;132</option>
+									<option>123kjl;132</option>
+								</select>
+							</div>
+							<div class="width ib line5" id="w5">
+								<input placeholder="200 inches" type="text" class="orderinfo"/>
+							</div>
+							<div class="height ib line5" id="h5">
+								<input placeholder="60 inches" type="text" class="orderinfo"/>
+							</div>
+							<div class="leftreturn ib line1" id="lr5">
+								<input placeholder="10 inches" type="text" class="orderinfo"/>
+							</div>
+							<div class="rightreturn ib line1" id="rr5">
+								<input placeholder="10 inches" type="text" class="orderinfo"/>
+							</div>
+							<button onclick="addToCart(this)">Test</button>
+							<div class="aandd">
+
+								<div id="delete5" class="addmore ib">Delete</div>
+								<div id="addmore5" class="addmore ib">Add</div>
+							</div>
+						</div>
+
+						<div id="add6" class="hide">
+							<div class="quantity ib line6" id="q6">
+								<input placeholder="11" type="text" class="orderinfo"/>
+							</div>
+							<div class="color ib line6" id="c6">
+								<select>
+									<option selected>Select Fabric</option>
+									<option>Windsor/Ivory</option>
+									<option>Roclon Suede</option>
+									<option>New Embassy Satin/Natural</option>
+									<option>New Omega/Linen</option>
+									<option>Calcutta/Natural</option>
+									<option>Frosted/Natural</option>
+									<option>123kjl;132</option>
+									<option>123kjl;132</option>
+									<option>123kjl;132</option>
+								</select>
+							</div>
+							<div class="width ib line6" id="w6">
+								<input placeholder="200 inches" type="text" class="orderinfo"/>
+							</div>
+							<div class="height ib line6" id="h6">
+								<input placeholder="60 inches" type="text" class="orderinfo"/>
+							</div>
+							<div class="leftreturn ib line1" id="lr6">
+								<input placeholder="10 inches" type="text" class="orderinfo"/>
+							</div>
+							<div class="rightreturn ib line1" id="rr6">
+								<input placeholder="10 inches" type="text" class="orderinfo"/>
+							</div>
+							<button onclick="addToCart(this)">Test</button>
+							<div class="aandd">
+
+								<div id="delete6" class="addmore ib">Delete</div>
+								<div id="addmore6" class="addmore ib">Add</div>
+							</div>
+						</div>
+
+						<div id="add7" class="hide">
+							<div class="quantity ib line7" id="q7">
+								<input placeholder="11" type="text" class="orderinfo"/>
+							</div>
+							<div class="color ib line7" id="c7">
+								<select>
+									<option selected>Select Fabric</option>
+									<option>Windsor/Ivory</option>
+									<option>Roclon Suede</option>
+									<option>New Embassy Satin/Natural</option>
+									<option>New Omega/Linen</option>
+									<option>Calcutta/Natural</option>
+									<option>Frosted/Natural</option>
+									<option>123kjl;132</option>
+									<option>123kjl;132</option>
+									<option>123kjl;132</option>
+								</select>
+							</div>
+							<div class="width ib line7" id="w7">
+								<input placeholder="200 inches" type="text" class="orderinfo"/>
+							</div>
+							<div class="height ib line7" id="h7">
+								<input placeholder="60 inches" type="text" class="orderinfo"/>
+							</div>
+							<div class="leftreturn ib line1" id="lr7">
+								<input placeholder="10 inches" type="text" class="orderinfo"/>
+							</div>
+							<div class="rightreturn ib line1" id="rr7">
+								<input placeholder="10 inches" type="text" class="orderinfo"/>
+							</div>
+							<button onclick="addToCart(this)">Test</button>
+							<div class="aandd">
+
+								<div id="delete7" class="addmore ib">Delete</div>
+								<div id="addmore7" class="addmore ib">Add</div>
+							</div>
+						</div>
+
+						<div id="add8" class="hide">
+							<div class="quantity ib line8" id="q8">
+								<input placeholder="11" type="text" class="orderinfo"/>
+							</div>
+							<div class="color ib line8" id="c8">
+								<select>
+									<option selected>Select Fabric</option>
+									<option>Windsor/Ivory</option>
+									<option>Roclon Suede</option>
+									<option>New Embassy Satin/Natural</option>
+									<option>New Omega/Linen</option>
+									<option>Calcutta/Natural</option>
+									<option>Frosted/Natural</option>
+									<option>123kjl;132</option>
+									<option>123kjl;132</option>
+									<option>123kjl;132</option>
+								</select>
+							</div>
+							<div class="width ib line8" id="w8">
+								<input placeholder="200 inches" type="text" class="orderinfo"/>
+							</div>
+							<div class="height ib line8" id="h8">
+								<input placeholder="60 inches" type="text" class="orderinfo"/>
+							</div>
+							<div class="leftreturn ib line1" id="lr8">
+								<input placeholder="10 inches" type="text" class="orderinfo"/>
+							</div>
+							<div class="rightreturn ib line1" id="rr8">
+								<input placeholder="10 inches" type="text" class="orderinfo"/>
+							</div>
+							<button onclick="addToCart(this)">Test</button>
+							<div class="aandd">
+								<div id="delete8" class="addmore ib">Delete</div>
+								<div id="addmore8" class="addmore ib">Add</div>
+							</div>
+						</div>
+
+						<div id="add9" class="hide">
+							<div class="quantity ib line9" id="q9">
+								<input placeholder="11" type="text" class="orderinfo"/>
+							</div>
+							<div class="color ib line9" id="c9">
+								<select>
+									<option selected>Select Fabric</option>
+									<option>Windsor/Ivory</option>
+									<option>Roclon Suede</option>
+									<option>New Embassy Satin/Natural</option>
+									<option>New Omega/Linen</option>
+									<option>Calcutta/Natural</option>
+									<option>Frosted/Natural</option>
+									<option>123kjl;132</option>
+									<option>123kjl;132</option>
+									<option>123kjl;132</option>
+								</select>
+							</div>
+							<div class="width ib line9" id="w9">
+								<input placeholder="200 inches" type="text" class="orderinfo"/>
+							</div>
+							<div class="height ib line9" id="h9">
+								<input placeholder="60 inches" type="text" class="orderinfo"/>
+							</div>
+							<div class="leftreturn ib line1" id="lr9">
+								<input placeholder="10 inches" type="text" class="orderinfo"/>
+							</div>
+							<div class="rightreturn ib line1" id="rr9">
+								<input placeholder="10 inches" type="text" class="orderinfo"/>
+							</div>
+							<button onclick="addToCart(this)">Test</button>
+							<div class="aandd">
+								<div id="delete9" class="addmore ib">Delete</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			
+		<div id="shopifycart">
+			<iframe src="https://alohadrapery-com.myshopify.com/cart" id="iframe" width="100%" height="100%"name="cartthingy" style="border:none;outline:none;"></iframe>
+		</div>
+	</div>
+
+
+	<div id="checkout_footer">
+		<div id="footercontent">
+			<div id="footerleft" class="ib">
+				<h1>Aloha Drapery</h1>
+				<a href="index.html#aloha"><p>About Us</p></a>
+				<a href="checkout.html"><p>Order Now</p></a>
+				<a href="index.html#samples"><p>Free Samples</p></a>
+				<a href="index.html#quote"><p>Get a Quote</p></a>
+				<a href="#"><p>Contact</p></a>
+			</div>
+			<div id="footermid" class="ib">
+				Follow Us on Facebook. Instagram. Google Plus. Twitter.
+			</div>
+			<div id="footerright" class="ib">
+				<div id="logo"></div>
+				<div>Address:Place</div>
+				<div>Email:questions@alohadrapery.com</div>
+				<div>Phone Number:(808)888-8888</div>
+				<a class="legal_trigger" rel="warranty" href="javascript:void(0);">Warranty</a>
+				<a class="legal_trigger" rel="returns" href="javascript:void(0);">Returns</a>
+				<a class="legal_trigger" rel="privacy" href="javascript:void(0);">Privacy Policy</a>
+
+
+				<div id="warranty" class="legal_popover">
+		            <div class="legal_contain" id="warrantycontain">
+		                <div class="contentcontain">
+		                    <span class="headerLegal">LIMITED LIFETIME WARRANTY</span>
+		                     <p>All products furnished by AlohaDrapery.com are under warranty to be free from defects to workmanship and materials as long as the original purchaser owns it.  The warranty is non-transferable and must be accompanied by a proof of purchase.
+
+		                     This warranty does not cover normal wear and tear or any damage or loss caused by accidents, alterations, misuse, abuse or extraordinary use, exposure to salt air, excessive temperatures or sunlight, excessive moisture or water, insect damage, improper installation, cleaning or other maintenance.
+
+		                     There will be variations in color, grain, and texture that are characteristic of natural products.  Such natural conditions are not considered defective and are excluded from the manufacturer's warranty.
+
+		                     Upon determination that a defect in workmanship or materials exists, AlohaDrapery.com will issue a return authorization and arrange the return at no charge.  AlohaDrapery.com at it's discretion will repair the product or provide a replacement product.  Replacements will be made to the original specifications only.  Discontinued items will be replaced with the closest equivalent current product. Cost for installation charges or lost profits are not included in the warranty.  No other warranties are expressed or implied.
+
+		                     Note:  We are responsible for the fabrication of your orders to your specification and not responsible for any design decisions including the suitability of fabric selections. (See Returns and Exchange Policy)
+
+		                     AlohaDrapery.com reserves the right to make changes or improvements on its products without incurring any obligation and without being required to make any corresponding changes or improvements in products previously manufactured or sold, and to discontinue products previously manufactured or sold, and to discontinue products at any time without notice.  All specifications subject to change without notice.
+
+		                     For all warranty service, please contact our customer service department at alohacare@AlohaDrapery.com.
+							</p>
+
+		                </div>
+		                <div class="close_legal"><div class="close">Close</div></div>
+			        </div>
+			    </div>
+
+
+			    <div id="returns" class="legal_popover">
+		            <div class="legal_contain" id="returnscontain">
+		                <div class="contentcontain">
+		                    <span class="headerLegal">RETURNS AND EXCHANGE POLICY</span>
+		                     <p>AlohaDrapery.com manufactures all of its orders on an individualized and customized basis and therefore operates under a No Return/No Exchange Policy, unless covered under the Limited Lifetime Warranty. If alterations are necessary, AlohaDrapery.com would be pleased to offer design and alteration services at reasonable prices. All freight costs associated with the alteration shall be paid by the customer. Upon receipt of payment, all orders shall be processed immediately and a No Cancellation Policy takes effect.</p>
+
+		                </div>
+		                <div class="close_legal"><div class="close">Close</div></div>
+			        </div>
+			    </div>
+
+
+
+				<div id="privacy" class="legal_popover">
+		            <div class="legal_contain" id="returnscontain">
+		                <div class="contentcontain">
+		                    <span class="headerLegal">RETURNS AND EXCHANGE POLICY</span>
+		                     <p>AlohaDrapery.com manufactures all of its orders on an individualized and customized basis and therefore operates under a No Return/No Exchange Policy, unless covered under the Limited Lifetime Warranty. If alterations are necessary, AlohaDrapery.com would be pleased to offer design and alteration services at reasonable prices. All freight costs associated with the alteration shall be paid by the customer. Upon receipt of payment, all orders shall be processed immediately and a No Cancellation Policy takes effect.</p>
+
+		                </div>
+		                <div class="close_legal"><div class="close">Close</div></div>
+			        </div>
+			    </div>
+
+			    <div id="describelr" class="legal_popover">
+		            <div class="legal_contain" id="returnscontain">
+		                <div class="contentcontain">
+		                    <span class="headerLegal">RETURNS AND EXCHANGE POLICY</span>
+		                     <p>AlohaDrapery.com manufactures all of its orders on an individualized and customized basis and therefore operates under a No Return/No Exchange Policy, unless covered under the Limited Lifetime Warranty. If alterations are necessary, AlohaDrapery.com would be pleased to offer design and alteration services at reasonable prices. All freight costs associated with the alteration shall be paid by the customer. Upon receipt of payment, all orders shall be processed immediately and a No Cancellation Policy takes effect.</p>
+
+		                </div>
+		                <div class="close_legal"><div class="close">Close</div></div>
+			        </div>
+			    </div>
+
+			    <div id="describerr" class="legal_popover">
+		            <div class="legal_contain" id="returnscontain">
+		                <div class="contentcontain">
+		                    <span class="headerLegal">RETURNS AND EXCHANGE POLICY</span>
+		                     <p>AlohaDrapery.com manufactures all of its orders on an individualized and customized basis and therefore operates under a No Return/No Exchange Policy, unless covered under the Limited Lifetime Warranty. If alterations are necessary, AlohaDrapery.com would be pleased to offer design and alteration services at reasonable prices. All freight costs associated with the alteration shall be paid by the customer. Upon receipt of payment, all orders shall be processed immediately and a No Cancellation Policy takes effect.</p>
+
+		                </div>
+		                <div class="close_legal"><div class="close">Close</div></div>
+			        </div>
+			    </div>
+
+			</div>
+		</div>
+	</div>
+</body>
+</html>
