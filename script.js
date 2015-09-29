@@ -124,11 +124,9 @@
         $('#addmore8').removeClass('hide');
         $('#delete8').addClass('show');
     });
-
-
-
 });
 function addToCart(elem) {
+    
     var f = document.createElement('form');
     f.style.display = 'none';
     elem.parentNode.appendChild(f);

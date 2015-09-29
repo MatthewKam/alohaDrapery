@@ -64,7 +64,17 @@ div#checkout_wrap {
     width: 1100px;
     margin: 0 auto;
 }
-
+button.addtocart{
+    color: white;
+    border: none;
+    background-color: orange;
+    border-radius: 5px;
+    height: 35px;
+    margin-top: 6px;
+    margin-left: 10px;
+    font-size: 15px;
+    padding: 0 15px;
+}
 
 
 
@@ -130,13 +140,17 @@ input.orderinfo {
 .color select {
     font-size: 15px;
     border: 1px solid lightgrey;
-    width: 130px;
+    width: 235px;
     margin-left: 5px;
     height: 35px;
     margin-top: 7px;
 }
 div#fabric {
-    width: 130px;
+    width: 235px;
+}
+div#shopifycart {
+    margin-top: 20px;
+    /*display: none;*/
 }
 div#totals {
     width: 260px;
