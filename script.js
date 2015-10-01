@@ -132,6 +132,11 @@ function getQuote() {
   var quoteFabric = $('#fabricQuote').val();
   var quoteLining = $('#liningQuote').val();
   var lining = 0;
+  if (quoteWidth === undefined) {
+    alert('Please choose a width between 0 and 180"');
+  } else if (quoteHeight === undefined) {
+    alert('Please choose a height between 0 and 144"');
+  }
   if (quoteLining != 'none') {
     lining = drapes[quoteLining][quoteWidth][quoteHeight]['price'];
   }
@@ -202,9 +207,9 @@ function getId(elem) {
     if (fabric == 'Select Fabric') {
       alert('Please select a fabric');
     } else if (buyWidth === undefined) {
-      alert('I am sorry, 180" is the largest width possible ');
+      alert('Please choose a total width between 0 and 180"');
     } else if (buyHeight === undefined) {
-      alert('I am sorry, 144" is the largest height possible ');
+      alert('Please choose a height between 0 and 144"');
     }
 
     return drapes[fabric][buyWidth][buyHeight]['id'];
