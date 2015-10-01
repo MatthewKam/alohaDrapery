@@ -207,9 +207,9 @@ function getId(elem) {
     if (fabric == 'Select Fabric') {
       alert('Please select a fabric');
     } else if (buyWidth === undefined) {
-      alert('Please choose a total width between 0 and 180"');
+      alert('Please choose a total width between 0 and 180');
     } else if (buyHeight === undefined) {
-      alert('Please choose a height between 0 and 144"');
+      alert('Please choose a height between 0 and 144');
     }
 
     return drapes[fabric][buyWidth][buyHeight]['id'];
