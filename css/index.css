@@ -21,6 +21,7 @@ body{
 	margin: 0 auto;
 	text-align:center;
 }
+
 div#topbarcopy {
     margin-top: 15px;
     width: 590px;
@@ -283,6 +284,25 @@ div#singlePanel {
 }
 
 /*RIGHT*/
+button#getQuote {
+    background-color: #ff9966;
+    padding: 10px 30px;
+    color: white;
+    box-shadow: 2px 2px 2px lightgrey;
+    margin-top: 15px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    float: right;
+    margin-right: 10px;
+    cursor:pointer;
+}
+button#getQuote:hover{
+    box-shadow: none;
+    /*margin-top: 17px;*/
+    margin-right:8px;
+}
 div#samples {
     padding-left: 40px;
     width: 595px;
@@ -400,7 +420,7 @@ div#samplewrap {
     background:url(../images/roclon.jpg)center top no-repeat;
 }
 select.formfields {
-    height: 38px;
+    height: 40px;
     border: 1px solid lightgrey;
     width: 144px;
     margin-top: 10px;
@@ -485,25 +505,26 @@ input.formfields {
     padding-left: 10px;
 }
 #totalbutton {
-    background-color: #ff9966;
+    background-color: #cc0033;
     padding: 10px;
-    color: white;
-    box-shadow: 2px 2px 2px lightgrey;
-    margin-top: 15px;
-    margin-left: 60px;
-    width: 240px;
+    width: 250px;
     text-align: center;
-        border-radius: 5px;
+    border-radius: 5px;
+    float: right;
+    font-weight: bold;
+    margin-top: 50px;
+    box-shadow: 2px 2px 2px lightgrey;
+    color: white;
 }
 #totalbutton:hover{
-    margin-left:62px;
-    margin-top:17px;
+    box-shadow: none;
+    margin-right:-2px;
 }
 div#totals {
     padding-left: 250px;
     line-height: 24px;
-        margin-top: 30px; 
-            width: 330px;
+    margin-top: 10px;
+    width: 330px;
 }
 div#freight {
     padding-left: 205px;
@@ -517,6 +538,9 @@ div#freight {
 
 
 /*FOOTER*/
+/*#footerleft h1{
+    color:#cc0033;
+}*/
 div#index_footer {
     margin-top: 30px;
     border-top: 2px solid lightgrey;
@@ -539,7 +563,7 @@ div#footermid {
     width:340px;
     padding: 30px;
     padding-top: 0;
-    line-height: 30px;
+    line-height: 45px;
     text-align: right;
 }
 #footerright div#logo {
@@ -636,6 +660,14 @@ a.legal_trigger {
 a.legal_trigger:hover {
     text-decoration: underline;
 }
+#contact{
+    display: none;
+}
+#contact a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
 #warranty{
     display:none;
 }
@@ -656,6 +688,9 @@ div.legal_popover {
     width: 100%;
     height: 100%;
     position: fixed;
+}
+div#headnavwrap a {
+    display: inline-block;
 }
 .legal_contain {
     background-color: white;
