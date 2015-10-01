@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>AlohaDrapery.com</title>
-	
+
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script type="text/javascript" src="script.js"></script>
@@ -82,15 +82,15 @@
 					</label>
 	          	</div>
       		</div>
-      		
+
 		</div>
-		
+
 		<div id="section2">
 			<div id="aloha">
 				<h1 id="alohadrapery">AlohaDrapery.com</h1>
 	  			<p>In the Hawaiian language, the translation of the word <strong>Aloha</strong> is "alo" (the presence or face to face) and "ha" (breath).  To live with the <strong>Spirit of Aloha</strong> is to simply love oneself first and to share the positive energy and experiences with others. In this spirit, <strong>AlohaDrapery.com</strong> is cultivating a worldwide effort to share its expertise in the manufacturing and delivering of custom sized fabric draperies at great value.  Place your <a href="checkout.html">Order Now!</a> and benefit from the factory direct savings.</p>
-				
-			</div>	
+
+			</div>
 		</div>
 
 		<div id="section3">
@@ -99,13 +99,13 @@
 			</div>
 			<div id="samples" class="ib">
 				<div id="getquote">
-					
+
 				<div id="samplestop">
 					<h1 id="sampletitle">Choose From Our High Quality Fabrics</h1>
 					<p>Made from the finest grade fabrics in the world. Quality and reasonable price!</p>
 				</div>
 				<div id="swatcheswrap">
-					
+
 					<div id="facefabric">
 						<div id="facefabrictitle" class="tac swatchestitles">Drapery Fabric</div>
 						<div class="swatchesinfo ib">
@@ -288,34 +288,34 @@
 					<div id="form">
 						<div class="ib">
 							<!-- <div class="label">Width</div> -->
-							<input type="text" class="formfields" placeholder="Width (inches)"/>
+							<input id='quoteWidth' type="text" class="formfields" placeholder="Width (inches)"/>
 						</div>
 						<div class="ib">
 							<!-- <div class="label">Height</div> -->
-							<input type="text" class="formfields" placeholder="Height (inches)"/>
+							<input id='quoteHeight' type="text" class="formfields" placeholder="Height (inches)"/>
 						</div>
-						
+
 						<div class="ib">
 							<!-- <div class="label">Choose a Fabric</div> -->
-							<select type="text" class="formfields">
+							<select id='fabricQuote' type="text" class="formfields">
 								<option selected>Select Fabric</option>
-								<option>Breeze (Medley Tan & White)</option>
-								<option>Tradewinds (Embassy Natural)</option>
-								<option>Shadow (Stansuede)</option>
-								<option>Sand (New Omega)</option>
-								<option>Seashore (Calcutta Natural)</option>
-								<option>Coral (Frosted) Natural)</option>
-								<option>Twilight (Dimout)</option>
-								<option>Sunset (Blackout)</option>
+								<option value='breeze'>Breeze (Medley Tan & White)</option>
+								<option value='tradewinds'>Tradewinds (Embassy Natural)</option>
+								<option value='shadow'>Shadow (Stansuede)</option>
+								<option value='sand'>Sand (New Omega)</option>
+								<option value='seashore'>Seashore (Calcutta Natural)</option>
+								<option value='coral'>Coral (Frosted) Natural)</option>
+								<option value='twilight'>Twilight (Dimout)</option>
+								<option value='sunset'>Sunset (Blackout)</option>
 							</select>
 						</div>
 						<div class="ib">
 							<!-- <div class="label">Choose a Lining</div> -->
-							<select class="formfields">
-								<option selected>Select a Lining</option>
-								<option>Clouds (Windsor Ivory/White)</option>
-								<option>Roclon Suede</option>
-								<option>None</option>
+							<select id='liningQuote' class="formfields">
+								<option value='none' selected>Select a Lining</option>
+								<option value='clouds'>Clouds (Windsor Ivory/White)</option>
+								<option value='roclon'>Roclon Suede</option>
+								<option value='none'>None</option>
 							</select>
 						</div>
 						<!-- <div class="ib">
@@ -326,9 +326,12 @@
 							<div class="label">Right Return</div>
 							<input type="text" class="formfields"/>
 						</div> -->
+						<div>
+							<button id='getQuote' onclick="getQuote()">Get Quote</button>
+						</div>
 						<div id="totals"class="ib">
 							<div class="label ib">Price:</div>
-							<div class="totalprice totals ib">$300 USD</div>
+							<div class="totalprice totals ib">$<span id='quoteAmount'>300</span> USD</div>
 							<div id="freight">Freight Included</div>
 							<a id="placeorder"href="checkout.html"><div id="totalbutton">Place Order Now</div></a>
 						</div>
@@ -338,7 +341,7 @@
 			</div>
 		</div>
 
-		
+
 	</div>
 	<div id="index_footer">
 		<div id="footercontent">
@@ -358,8 +361,8 @@
 				<div>Address:Place</div>
 				<div>Email:questions@alohadrapery.com</div>
 				<div>Phone Number:(808)888-8888</div>
-				<a class="legal_trigger" rel="warranty" href="javascript:void(0);">Warranty</a> 
-				<a class="legal_trigger" rel="returns" href="javascript:void(0);">Returns</a> 
+				<a class="legal_trigger" rel="warranty" href="javascript:void(0);">Warranty</a>
+				<a class="legal_trigger" rel="returns" href="javascript:void(0);">Returns</a>
 				<a class="legal_trigger" rel="privacy" href="javascript:void(0);">Privacy Policy</a>
 
 
@@ -369,9 +372,9 @@
 		                    <span class="headerLegal">LIMITED LIFETIME WARRANTY</span>
 		                     <p>All products furnished by AlohaDrapery.com are under warranty to be free from defects to workmanship and materials as long as the original purchaser owns it.  The warranty is non-transferable and must be accompanied by a proof of purchase.
 
-		                     This warranty does not cover normal wear and tear or any damage or loss caused by accidents, alterations, misuse, abuse or extraordinary use, exposure to salt air, excessive temperatures or sunlight, excessive moisture or water, insect damage, improper installation, cleaning or other maintenance.   
+		                     This warranty does not cover normal wear and tear or any damage or loss caused by accidents, alterations, misuse, abuse or extraordinary use, exposure to salt air, excessive temperatures or sunlight, excessive moisture or water, insect damage, improper installation, cleaning or other maintenance.
 
-		                     There will be variations in color, grain, and texture that are characteristic of natural products.  Such natural conditions are not considered defective and are excluded from the manufacturer's warranty.  
+		                     There will be variations in color, grain, and texture that are characteristic of natural products.  Such natural conditions are not considered defective and are excluded from the manufacturer's warranty.
 
 		                     Upon determination that a defect in workmanship or materials exists, AlohaDrapery.com will issue a return authorization and arrange the return at no charge.  AlohaDrapery.com at it's discretion will repair the product or provide a replacement product.  Replacements will be made to the original specifications only.  Discontinued items will be replaced with the closest equivalent current product. Cost for installation charges or lost profits are not included in the warranty.  No other warranties are expressed or implied.
 
@@ -379,9 +382,9 @@
 
 		                     AlohaDrapery.com reserves the right to make changes or improvements on its products without incurring any obligation and without being required to make any corresponding changes or improvements in products previously manufactured or sold, and to discontinue products previously manufactured or sold, and to discontinue products at any time without notice.  All specifications subject to change without notice.
 
-		                     For all warranty service, please contact our customer service department at alohacare@AlohaDrapery.com.    
+		                     For all warranty service, please contact our customer service department at alohacare@AlohaDrapery.com.
 							</p>
-							
+
 		                </div>
 		                <div class="close_legal"><div class="close">Close</div></div>
 			        </div>
@@ -393,7 +396,7 @@
 		                <div class="contentcontain">
 		                    <span class="headerLegal">RETURNS AND EXCHANGE POLICY</span>
 		                     <p>AlohaDrapery.com manufactures all of its orders on an individualized and customized basis and therefore operates under a No Return/No Exchange Policy, unless covered under the Limited Lifetime Warranty. If alterations are necessary, AlohaDrapery.com would be pleased to offer design and alteration services at reasonable prices. All freight costs associated with the alteration shall be paid by the customer. Upon receipt of payment, all orders shall be processed immediately and a No Cancellation Policy takes effect.</p>
-		                     
+
 		                </div>
 		                <div class="close_legal"><div class="close">Close</div></div>
 			        </div>
@@ -406,7 +409,7 @@
 		                <div class="contentcontain">
 		                    <span class="headerLegal">RETURNS AND EXCHANGE POLICY</span>
 		                     <p>AlohaDrapery.com manufactures all of its orders on an individualized and customized basis and therefore operates under a No Return/No Exchange Policy, unless covered under the Limited Lifetime Warranty. If alterations are necessary, AlohaDrapery.com would be pleased to offer design and alteration services at reasonable prices. All freight costs associated with the alteration shall be paid by the customer. Upon receipt of payment, all orders shall be processed immediately and a No Cancellation Policy takes effect.</p>
-		                     
+
 		                </div>
 		                <div class="close_legal"><div class="close">Close</div></div>
 			        </div>
