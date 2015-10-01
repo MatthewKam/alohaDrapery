@@ -20,7 +20,9 @@ body{
 div#head {
     background-color: white;
 }
+
 div#headnavwrap a {
+    display: inline-block;
     color: black;
 }
 div#headtop {
@@ -483,7 +485,7 @@ div#footermid {
     width:340px;
     padding: 30px;
     padding-top: 0;
-    line-height: 30px;
+    line-height: 45px;  
     text-align: right;
 }
 #footerright div#logo {
@@ -580,15 +582,23 @@ a.legal_trigger {
 a.legal_trigger:hover {
     text-decoration: underline;
 }
+#contact{
+    display: none;
+}
+#contact a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
 #warranty{
     display:none;
 }
 #returns{
     display:none;
 }
-#privacy{
+/*#privacy{
     display:none;
-}
+}*/
 div.legal_popover {
     z-index: 11;
     top: 0;
