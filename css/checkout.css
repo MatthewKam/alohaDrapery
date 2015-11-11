@@ -570,6 +570,7 @@ div.close {
     color: white;
     font-size: 16px;
     margin-left: 1px;
+    line-height: 30px;
 }
 a.footerlink{
     cursor:pointer;
@@ -603,7 +604,7 @@ div.legal_popover {
     z-index: 11;
     top: 0;
     left: 0;
-    padding: 40px;
+    padding-top: 40px;
     border: 1px solid grey;
     text-align: center;
     background-color: rgba(0,0,0,0.5);
@@ -619,6 +620,30 @@ div.legal_popover {
     padding-top: 30px;
         margin-top: 5%;
     margin-left: 20%;
+}
+div#describelr .legal_contain {
+    width: 990px;
+    margin: 0 auto;
+    height: 550px;
+}
+div#describelr .contentcontain {
+    height: 510px;
+    overflow-y: scroll;
+    background: url(../images/MeasureForm.jpg)top no-repeat;
+    background-size: contain;
+    background-position: center 10px;
+}
+div#describerr .legal_contain {
+    width: 990px;
+    margin: 0 auto;
+    height: 550px;
+}
+div#describerr .contentcontain {
+    height: 510px;
+    overflow-y: scroll;
+    background: url(../images/MeasureForm.jpg)top no-repeat;
+    background-size: contain;
+    background-position: center 10px;
 }
 .contentcontain {
     height: 370px;

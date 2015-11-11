@@ -9,15 +9,43 @@ body{
 .tal{text-align: left;}
 .tac{text-align: center;}
 .hide{display: none;}
-
+div#wrap {
+    background-color: #ece8e1;
+    padding-top:30px;
+}
+div#ad {
+    font-size: 83px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    padding-top: 230px;
+}
+video#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(../images/pairPanel.jpg) no-repeat;
+    background-size: cover; 
+}
+div#pleaseplace {
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+}
 /*TOPBAR*/
 #topbar{
-	background-color:#99cc66;
-	height: 50px;
-    min-width: 1100px;
+	/*background-color:#99cc66;*/
+    width: 100%;
+    height:100%;
+    background-color: rgba(0,0,0,.5);
 }
 #topbarwrap{
-	width: 1100px;
 	margin: 0 auto;
 	text-align:center;
 }
@@ -28,6 +56,14 @@ div#topbarcopy {
 }
 div#topbuttonwrap {
     width: 150px;
+
+}
+div#topbarinner a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 68px;
+    text-align: center;
 }
 #topbarbutton {
     background-color: #ff9966;
@@ -39,6 +75,7 @@ div#topbuttonwrap {
     width: 120px;
         border-radius: 5px;
 }
+
 #topbarbutton:hover{
 	box-shadow: none;
     margin-top: 7px;
@@ -108,7 +145,7 @@ div#headnav {
     width: 1080px;
     margin: 0 auto;
     border: 10px solid white;
-    margin-top: 30px;
+    /*margin-top: 30px;*/
 }
 
 .carousel-inner {
@@ -118,7 +155,7 @@ div#headnav {
     height:100%;
 }
 
-/*.carousel-open:checked + .carousel-item {
+.carousel-open:checked + .carousel-item {
     position: static;
     opacity: 100;
 }
@@ -142,10 +179,9 @@ div#headnav {
     cursor: pointer;
     z-index: 1;
 }
-
+/*#carousel-3:checked ~ .control-3*/
 #carousel-1:checked ~ .control-1,
-#carousel-2:checked ~ .control-2,
-#carousel-3:checked ~ .control-3 {
+#carousel-2:checked ~ .control-2{
     display: block;
 }
 .carousel-open{
@@ -200,23 +236,24 @@ div#headnav {
 }
 .carousel-control:hover {
 
-}*/
+}
 #carousel1 {
     background: url(../images/pairPanel.jpg)center top no-repeat;
     height: 600px;
-    width: 1100px;
+
     margin: 0 auto;
     background-position: -150px -340px;
     background-size: 115%;
 }
-/*#carousel2{
-    background: url(../images/fabrics.png)center top no-repeat;
-    height: 600px;
-    width: 1100px;
+#carousel2 {
+    background: url(../images/singlePanel.jpg)center top no-repeat;
+    height: 750px;
     margin: 0 auto;
+    background-position: center -100px;
     background-size: contain;
+    background-color: rgba(255,255,255,.5);
 }
-#carousel3{
+/*#carousel3{
     background: url(../images/fabrics.png)center top no-repeat;
     height: 600px;
     width: 1100px;
@@ -224,14 +261,14 @@ div#headnav {
     background-size: contain;
 }*/
 div.carouselcopy {
-    padding: 50px;
-    background-color: rgba(255,255,255,.6);
-    text-align: center;
+    padding: 50px 0;
+   text-align: left;
     height: 110px;
+    margin-left: 90px;
     position: absolute;
     bottom: 0;
     width: 100%;
-    font-size: 36px;
+    font-size: 64px;
     font-weight: bold;
 }
 
@@ -243,10 +280,8 @@ div#section2{
     
 }
 div#aloha {
-    padding-top: 30px;
-    width: 480px;
-    margin-top: 10px;
-    margin-bottom: 50px;
+    margin-top: 40px;
+    margin-bottom: 20px;
     margin-left: 10px;
 }
 div#aloha p {
@@ -261,24 +296,24 @@ div#aloha p {
     margin: 0 auto;
     margin-bottom: 20px;
 }
-div#video {
+/*div#video {
     height: 360px;
     background-color: white;
     width: 570px;
     margin-left: 30px;
     margin-top: 30px;
-}
+}*/
 #aloha a {
     color: #cc0033;
     font-weight: bold;
     font-size: 20px;
 }
-#video p {
+/*#video p {
     text-align: center;
     margin-top: 100px;
     font-size: 60px;
 }
-
+*/
 
 
 /*SECTION3*/
@@ -289,28 +324,108 @@ div#section3 {
     margin-top: 30px;
 }
 #singlePanel{
-    background:url(../images/singlePanel.jpg)center top no-repeat;
+    /*background:url(../images/singlePanel.jpg)center top no-repeat;*/
 }
 div#singlePanel {
-        width: 440px;
-    height: 880px;
-    background-size: contain;
+    width: 630px;
+    background-color: rgba(255,255,255,.3);
     margin-top: 30px;
     border: 10px solid white;
+    padding-bottom: 10px;
 }
-
+div#sandheight {
+    transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    margin-top: 130px;
+    font-size: 22px;
+    width: 150px;
+    margin-left: -40px;
+}
+div#sandwidth {
+    font-size: 22px;
+    margin-left: 245px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+div#s3leftcopy p, h1 {
+    text-align: center;
+}
+div#widths {
+    margin-left: -55px;
+    line-height: 35px;
+    font-size: 20px;
+    text-align: center;
+}
+.heights{
+    border-right: 1px solid grey;
+    padding-right: 11px;
+}
+.widths {
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+}
+div#space {
+    border-right: none;
+}
+.widthslabel {
+    border-bottom: 1px solid grey;
+    width: 45px;
+    padding: 0;
+    margin: 0;
+}
+div#s3leftcopy p {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 6px;
+}
+div#s3leftcopy h1 {
+    width: 380px;
+    border-bottom: 1px solid grey;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+#sandimage {
+    background: url(../images/sand.jpg)center top no-repeat;
+    height: 250px;
+    width: 340px;
+    border: 5px solid white;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+div#ordernowbutton a {
+    background-color: #ff9966;
+    padding: 10px;
+    color: white;
+    box-shadow: 2px 2px 2px lightgrey;
+    width: 240px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 22px;
+}
+div#ordernowbutton{
+    text-align: center;
+    margin-top: 180px;
+    display:none;
+}
+#sandimage:hover div#ordernowbutton{
+    display:block;
+}
 /*RIGHT*/
 button#getQuote {
     background-color: #ff9966;
     padding: 10px 30px;
     color: white;
     box-shadow: 2px 2px 2px lightgrey;
-    margin-top: 15px;
+
     text-align: center;
     border-radius: 5px;
     border: none;
     font-size: 18px;
-    float: right;
+    /*float: right;*/
     margin-right: 10px;
     cursor:pointer;
 }
@@ -320,9 +435,9 @@ button#getQuote:hover{
     margin-right:8px;
 }
 div#samples {
-    padding-left: 40px;
-    width: 595px;
+    width: 420px;
     padding-top: 30px;
+    margin-left: 20px;
 }
 #samplestop {
     
@@ -363,10 +478,10 @@ div#freesamples:hover{
     margin-left:12px;
 }
 div.swatcheswrap {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     border: 5px solid white;
-    margin: 25px;
+    margin: 15px;
     margin-bottom: 0px;
     overflow: hidden;
 }
@@ -393,15 +508,15 @@ div#samplewrap {
 #swatch3wrap:hover #swatch3{
     margin-left: -215px;
 }
-#swatch4wrap:hover #swatch4{
+#swatch6wrap:hover #swatch6{
     margin-left: -215px;
 }
-#swatch7wrap:hover #swatch7{
+#swatch9wrap:hover #swatch9{
     margin-left: -215px;
 }
-#swatch8wrap:hover #swatch8{
+/*#swatch8wrap:hover #swatch8{
     margin-left: -215px;
-}
+}*/
 #swatch1{
     background:url(../images/BREEZE_NATURAL_1_3739.jpg)center top no-repeat;
 }
@@ -438,7 +553,7 @@ div#samplewrap {
 select.formfields {
     height: 40px;
     border: 1px solid lightgrey;
-    width: 144px;
+        width: 205px;
     margin-top: 10px;
         margin-left: 1px;
     font-size: 16px;
@@ -468,7 +583,7 @@ div.swatches .description .dleftcopy p {
 }
 div.productinfo {
     text-align: center;
-    width: 150px;
+    width: 130px;
     margin: 0 auto;
     margin-top: 10px;
 }
@@ -487,7 +602,7 @@ div.productinfo {
 .dleftcopy.ib {
 }
 .leftpad {
-    margin-left: 50px;
+       margin-left: 10px;
 }
 #getquote p,h1{
     margin:0;
@@ -506,6 +621,7 @@ div.productinfo {
 #getquote p {
     text-align: center;
     margin-bottom: 10px;
+    margin-top: 10px;   
 }
 .label {
     text-align: center;
@@ -521,38 +637,56 @@ input.formfields {
     padding-left: 10px;
 }
 #totalbutton {
-    background-color: #cc0033;
+        background-color: #cc0033;
     padding: 10px;
-    width: 250px;
+        width: 320px;
+    margin: 0 auto;
     text-align: center;
     border-radius: 5px;
-    float: right;
+    /* float: right; */
     font-weight: bold;
     margin-top: 50px;
-    box-shadow: 2px 2px 2px lightgrey;
+    box-shadow: 2px 2px 2px grey;
     color: white;
 }
 #totalbutton:hover{
     box-shadow: none;
-    margin-right:-2px;
+    /*margin-left: 100px;*/
 }
 div#totals {
-    padding-left: 250px;
+    
     line-height: 24px;
     margin-top: 10px;
-    width: 330px;
 }
 div#freight {
-    padding-left: 205px;
+   text-align: center;
 }
 #totals .label.ib {
-    width: 180px;
+    /*width: 180px;*/
     text-align: right;
     margin-right: 20px;
 
 }
-
-
+p#exclusivebottom {
+    margin-top: 40px;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+div#exclusiveoffer {
+    float: right;
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 20px;
+    margin-right: 10px;
+}
+div#form {
+    text-align: center;
+}
+div#getquotesnow p {
+    text-align: center;
+    margin-bottom: 10px;
+}
 /*FOOTER*/
 /*#footerleft h1{
     color:#cc0033;
@@ -664,6 +798,7 @@ div.close {
     color: white;
     font-size: 16px;
     margin-left: 1px;
+    line-height: 30px;
 }
 a.footerlink{
     cursor:pointer;
@@ -747,7 +882,7 @@ div#lining {
 }
 
 div#lininginfo {
-    width: 170px;
+        width: 120px;
     line-height: 30px;
     text-align: center;
     margin-top: 40px;
@@ -756,7 +891,88 @@ div#lininginfo a {
     color: black;
     text-decoration: none;
 }
+.totalprice.totals.ib {
+    font-weight: bold;
+    font-size: 24px;
+}
+div#footerleft h1 {
+    text-align: left;
+}
 @media only screen and (max-width:960px){
 
 }
+.lead-scroll {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -70px;
+    padding: 0px 0;
+    width: 140px;
+    height: 100px;
+    z-index: 100;
+}
+.lead-scroll .arrows {
+   width: 60px;
+    height: 100px;
+    margin: 0 auto;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+svg {
+    max-height: 100%;
+}
 
+.lead-scroll .arrows path {
+    stroke: white;
+    fill: transparent;
+    stroke-width: 4px;
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite;
+}
+.arrows path.a1 {
+    animation-delay: -1s;
+    -webkit-animation-delay: -1s;
+}
+.arrows path.a2 {
+    animation-delay: -.5s;
+    -webkit-animation-delay: -.5s;
+}
+.arrows path.a3 {
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+}
+div#toparrows {
+        margin-bottom: 100px;
+}
+a#anchor div {
+    font-size: 24px;
+}
+@keyframes arrow {
+    0% {
+        opacity:0
+    }
+    40% {
+        opacity:1
+    }
+    80% {
+        opacity:0
+    }
+    100% {
+        opacity:0
+    }
+}
+@-webkit-keyframes arrow /*Safari and Chrome*/ {
+    0% {
+        opacity:0
+    }
+    40% {
+        opacity:1
+    }
+    80% {
+        opacity:0
+    }
+    100% {
+        opacity:0
+    }
+}
