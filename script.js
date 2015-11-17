@@ -22,7 +22,9 @@
         }
 
     });
-
+    $('.addtocart').click(function() {
+        $('#shopifycart').addClass('fullDisplay');
+    });
     $('.close_legal').click(function() {
         $('.legal_popover').fadeOut();
     });
@@ -167,6 +169,11 @@ function addToCart(elem) {
     r.setAttribute('name', 'return_to');
     r.setAttribute('value', 'back');
     f.appendChild(r);
+    // var l = document.createElement('input');
+    // l.setAttribute('type', 'hidden');
+    // l.setAttribute('name', 'return_to');
+    // l.setAttribute('value', 'back');
+    // f.appendChild(l);
     var x = document.createElement('input');
     x.setAttribute('type', 'hidden');
     x.setAttribute('name', 'quantity');
@@ -203,7 +210,7 @@ function getId(elem) {
     var buyWidth = closest(widthArray, parseInt($(elem).siblings(".width").children()[0].value, 10) + parseInt($(elem).siblings(".leftreturn").children()[0].value, 10) + parseInt($(elem).siblings(".rightreturn").children()[0].value, 10));
     var buyHeight = closest(heightArray, $(elem).siblings(".height").children()[0].value);
     var fabric = $(elem).siblings(".color").children()[0].value;
-
+    // var lining = $(elem).siblings(".lining").children()[0].value;
     if (fabric == 'Select Fabric') {
       alert('Please select a fabric');
     } else if (buyWidth === undefined) {
@@ -211,7 +218,13 @@ function getId(elem) {
     } else if (buyHeight === undefined) {
       alert('Please choose a height between 0 and 144');
     }
-
+    // if (lining == 'Select Lining') {
+    //   alert('Please select a Lining');
+    // } else if (buyWidth === undefined) {
+    //   alert('Please choose a total width between 0 and 180');
+    // } else if (buyHeight === undefined) {
+    //   alert('Please choose a height between 0 and 144');
+    // }
     return drapes[fabric][buyWidth][buyHeight]['id'];
 }
 
@@ -380,7 +393,89 @@ var drapes = {
       144: { id: 6632761477, price: 556 }
     }
   },
-  clouds: {
+  cloudsWhite: {
+    28: {
+      60: { id: 8664954437, price: 48 },
+      72: { id: 8664954501, price: 53 },
+      84: { id: 8664954565, price: 55 },
+      96: { id: 8664954629, price: 64 },
+      120: { id: 8664954693, price: 77 },
+      144: { id: 8664954757, price: 89 }
+    },
+    40: {
+      60: { id: 8664954821, price: 54 },
+      72: { id: 8664954885, price: 61 },
+      84: { id: 8664954949, price: 63 },
+      96: { id: 8664955013, price: 72 },
+      120: { id: 8664955077, price: 95 },
+      144: { id: 8664955141, price: 101 }
+    },
+    52: {
+      60: { id: 8664955269, price: 64 },
+      72: { id: 8664955333, price: 70 },
+      84: { id: 8664955397, price: 73 },
+      96: { id: 8664955461, price: 84 },
+      120: { id: 8664955525, price: 116 },
+      144: { id: 8664955589, price: 122 }
+    },
+    64: {
+      60: { id: 8664955653, price: 73 },
+      72: { id: 8664955717, price: 80 },
+      84: { id: 8664955781, price: 84 },
+      96: { id: 8664955845, price: 95 },
+      120: { id: 8664955909, price: 130 },
+      144: { id: 8664955973, price: 138 }
+    },
+    78: {
+      60: { id: 8664956037, price: 91 },
+      72: { id: 8664956101, price: 101 },
+      84: { id: 8664956165, price: 105 },
+      96: { id: 8664956229, price: 120 },
+      120: { id: 8664956293, price: 165 },
+      144: { id: 8664956357, price: 174 }
+    },
+    90: {
+      60: { id: 8664956421, price: 109 },
+      72: { id: 8664956485, price: 121 },
+      84: { id: 8664956549, price: 126 },
+      96: { id: 8664956613, price: 144 },
+      120: { id: 8664956677, price: 200 },
+      144: { id: 8664956741, price: 210 }
+    },
+    112: {
+      60: { id: 8664956805, price: 133 },
+      72: { id: 8664956869, price: 147 },
+      84: { id: 8664956933, price: 152 },
+      96: { id: 8664956997, price: 175 },
+      120: { id: 8664957061, price: 242 },
+      144: { id: 8664957125, price: 253 }
+    },
+    135: {
+      60: { id: 8664957189, price: 156 },
+      72: { id: 8664957253, price: 172 },
+      84: { id: 8664957317, price: 180 },
+      96: { id: 8664957381, price: 205 },
+      120: { id: 8664957509, price: 284 },
+      144: { id: 8664957573, price: 298 }
+    },
+    157: {
+      60: { id: 8664957637, price: 202 },
+      72: { id: 8664957765, price: 224 },
+      84: { id: 8664957829, price: 232 },
+      96: { id: 8664957893, price: 303 },
+      120: { id: 8664958021, price: 375 },
+      144: { id: 8664958085, price: 391 }
+    },
+    180: {
+      60: { id: 8664958149, price: 214 },
+      72: { id: 8664958277, price: 237 },
+      84: { id: 8664958341, price: 246 },
+      96: { id: 8664958405, price: 282 },
+      120: { id: 8664958533, price: 336 },
+      144: { id: 8664958597, price: 410 }
+    }
+  },
+  cloudsIvory: {
     28: {
       60: { id: 6549308997, price: 48 },
       72: { id: 6549309061, price: 53 },
@@ -435,7 +530,7 @@ var drapes = {
       84: { id: 6549311493, price: 152 },
       96: { id: 6549311557, price: 175 },
       120: { id: 6549311621, price: 242 },
-      144: { id: 2266864389, price: 253 }
+      144: { id: 6549311685, price: 253 }
     },
     135: {
       60: { id: 6549311749, price: 156 },
@@ -1116,6 +1211,252 @@ var drapes = {
       96: { id: 6547604037, price: 468 },
       120: { id: 6547604101, price: 551 },
       144: { id: 6547604165, price: 634 }
+    }
+  },
+  sunsetAttached: {
+    28: {
+      60: { id: 8668082245, price: 43 },
+      72: { id: 8668082309, price: 49 },
+      84: { id: 8668082373, price: 55 },
+      96: { id: 8668082437, price: 61 },
+      120: { id: 8668082501, price: 73 },
+      144: { id: 8668082565, price: 85 }
+    },
+    40: {
+      60: { id: 8668082629, price: 62 },
+      72: { id: 8668082693, price: 70 },
+      84: { id: 8668082757, price: 78 },
+      96: { id: 8668082821, price: 115 },
+      120: { id: 8668082885, price: 136 },
+      144: { id: 8668082949, price: 157 }
+    },
+    52: {
+      60: { id: 8668083013, price: 91 },
+      72: { id: 8668083077, price: 102 },
+      84: { id: 8668083141, price: 113 },
+      96: { id: 8668083205, price: 124 },
+      120: { id: 8668083269, price: 146 },
+      144: { id: 8668083333, price: 167 }
+    },
+    64: {
+      60: { id: 8668083397, price: 127 },
+      72: { id: 8668083461, price: 142 },
+      84: { id: 8668083525, price: 158 },
+      96: { id: 8668083589, price: 173 },
+      120: { id: 8668084101, price: 204 },
+      144: { id: 8668084165, price: 235 }
+    },
+    78: {
+      60: { id: 8668084229, price: 152 },
+      72: { id: 8668084293, price: 171 },
+      84: { id: 8668084357, price: 189 },
+      96: { id: 8668084421, price: 208 },
+      120: { id: 8668084485, price: 245 },
+      144: { id: 8668084549, price: 282 }
+    },
+    90: {
+      60: { id: 8668084613, price: 176 },
+      72: { id: 8668084677, price: 198 },
+      84: { id: 8668084741, price: 219 },
+      96: { id: 8668084805, price: 241 },
+      120: { id: 8668084869, price: 283 },
+      144: { id: 8668084933, price: 326 }
+    },
+    112: {
+      60: { id: 8668084997, price: 218 },
+      72: { id: 8668085061, price: 244 },
+      84: { id: 8668085125, price: 270 },
+      96: { id: 8668085189, price: 297 },
+      120: { id: 8668085253, price: 350 },
+      144: { id: 8668085317, price: 403 }
+    },
+    135: {
+      60: { id: 8668085381, price: 260 },
+      72: { id: 8668085445, price: 291 },
+      84: { id: 8668085509, price: 323 },
+      96: { id: 8668085573, price: 354 },
+      120: { id: 8668085637, price: 417 },
+      144: { id: 8668085701, price: 480 }
+    },
+    157: {
+      60: { id: 8668085765, price: 301 },
+      72: { id: 8668085829, price: 338 },
+      84: { id: 8668085893, price: 374 },
+      96: { id: 8668085957, price: 411 },
+      120: { id: 8668086021, price: 484 },
+      144: { id: 8668086085, price: 557 }
+    },
+    180: {
+      60: { id: 8668086149, price: 343 },
+      72: { id: 8668086213, price: 385 },
+      84: { id: 8668086277, price: 426 },
+      96: { id: 8668086341, price: 468 },
+      120: { id: 8668086405, price: 551 },
+      144: { id: 8668086469, price: 634 }
+    }
+  },
+  cloudsIvoryAttached: {
+    28: {
+      60: { id: 8665004869, price: 73 },
+      72: { id: 8665004933, price: 87 },
+      84: { id: 8665004997, price: 93 },
+      96: { id: 8665005061, price: 107 },
+      120: { id: 8665005125, price: 117 },
+      144: { id: 8665005189, price: 133 }
+    },
+    40: {
+      60: { id: 8665005253, price: 84 },
+      72: { id: 8665005317, price: 95 },
+      84: { id: 8665005381, price: 105 },
+      96: { id: 8665005445, price: 115 },
+      120: { id: 8665005509, price: 136 },
+      144: { id: 8665005573, price: 157 }
+    },
+    52: {
+      60: { id: 8665005637, price: 91 },
+      72: { id: 8665005701, price: 102 },
+      84: { id: 8665005765, price: 113 },
+      96: { id: 8665005829, price: 124 },
+      120: { id: 8665005893, price: 146 },
+      144: { id: 8665005957, price: 167 }
+    },
+    64: {
+      60: { id: 8665006021, price: 127 },
+      72: { id: 8665006085, price: 142 },
+      84: { id: 8665006149, price: 158 },
+      96: { id: 8665006213, price: 173 },
+      120: { id: 8665006277, price: 204 },
+      144: { id: 8665006341, price: 235 }
+    },
+    78: {
+      60: { id: 8665006405, price: 152 },
+      72: { id: 8665006469, price: 171 },
+      84: { id: 8665006533, price: 189 },
+      96: { id: 8665006597, price: 208 },
+      120: { id: 8665006661, price: 245 },
+      144: { id: 8665006725, price: 282 }
+    },
+    90: {
+      60: { id: 8665006789, price: 176 },
+      72: { id: 8665006853, price: 198 },
+      84: { id: 8665006917, price: 219 },
+      96: { id: 8665006981, price: 241 },
+      120: { id: 8665007045, price: 283 },
+      144: { id: 8665007109, price: 326 }
+    },
+    112: {
+      60: { id: 8665007173, price: 218 },
+      72: { id: 8665007237, price: 244 },
+      84: { id: 8665007365, price: 270 },
+      96: { id: 8665007429, price: 297 },
+      120: { id: 8665007493, price: 350 },
+      144: { id: 8665007557, price: 403 }
+    },
+    135: {
+      60: { id: 8665007621, price: 260 },
+      72: { id: 8665007685, price: 291 },
+      84: { id: 8665007749, price: 323 },
+      96: { id: 8665007813, price: 354 },
+      120: { id: 8665007877, price: 417 },
+      144: { id: 8665007941, price: 480 }
+    },
+    157: {
+      60: { id: 8665008005, price: 301 },
+      72: { id: 8665008069, price: 338 },
+      84: { id: 8665008069, price: 374 },
+      96: { id: 8665008069, price: 411 },
+      120: { id: 8665008261, price: 484 },
+      144: { id: 8665008325, price: 557 }
+    },
+    180: {
+      60: { id: 8665008389, price: 343 },
+      72: { id: 8665008453, price: 385 },
+      84: { id: 8665008517, price: 426 },
+      96: { id: 8665008581, price: 468 },
+      120: { id: 8665008645, price: 551 },
+      144: { id: 8665008709, price: 634 }
+    }
+  },
+  cloudsWhiteAttached: {
+    28: {
+      60: { id: 8664987781, price: 111111 },
+      72: { id: 8664987845, price: 87 },
+      84: { id: 8664987909, price: 93 },
+      96: { id: 8664987973, price: 107 },
+      120: { id: 8664988037, price: 117 },
+      144: { id: 8664988101, price: 133 }
+    },
+    40: {
+      60: { id: 8664988165, price: 84 },
+      72: { id: 8664988229, price: 95 },
+      84: { id: 8664988293, price: 105 },
+      96: { id: 8664988357, price: 115 },
+      120: { id: 8664988421, price: 136 },
+      144: { id: 8664988485, price: 157 }
+    },
+    52: {
+      60: { id: 8664988549, price: 91 },
+      72: { id: 8664988613, price: 102 },
+      84: { id: 8664988677, price: 113 },
+      96: { id: 8664988741, price: 124 },
+      120: { id: 8664988805, price: 146 },
+      144: { id: 8664988869, price: 167 }
+    },
+    64: {
+      60: { id: 8664988933, price: 127 },
+      72: { id: 8664988997, price: 142 },
+      84: { id: 8664989061, price: 158 },
+      96: { id: 8664989189, price: 173 },
+      120: { id: 8664989317, price: 204 },
+      144: { id: 8664989381, price: 235 }
+    },
+    78: {
+      60: { id: 8664989445, price: 152 },
+      72: { id: 8664989509, price: 171 },
+      84: { id: 8664989573, price: 189 },
+      96: { id: 8664989637, price: 208 },
+      120: { id: 8664989701, price: 245 },
+      144: { id: 8664989765, price: 282 }
+    },
+    90: {
+      60: { id: 8664989829, price: 176 },
+      72: { id: 8664989893, price: 198 },
+      84: { id: 8664989957, price: 219 },
+      96: { id: 8664990021, price: 241 },
+      120: { id: 8664990085, price: 283 },
+      144: { id: 8664990149, price: 326 }
+    },
+    112: {
+      60: { id: 8664990213, price: 218 },
+      72: { id: 8664990277, price: 244 },
+      84: { id: 8664990341, price: 270 },
+      96: { id: 8664990405, price: 297 },
+      120: { id: 8664990469, price: 350 },
+      144: { id: 8664990533, price: 403 }
+    },
+    135: {
+      60: { id: 8664990597, price: 260 },
+      72: { id: 8664990661, price: 291 },
+      84: { id: 8664990725, price: 323 },
+      96: { id: 8664990789, price: 354 },
+      120: { id: 8664990853, price: 417 },
+      144: { id: 8664990917, price: 480 }
+    },
+    157: {
+      60: { id: 8664990981, price: 301 },
+      72: { id: 8664991045, price: 338 },
+      84: { id: 8664991109, price: 374 },
+      96: { id: 8664991173, price: 411 },
+      120: { id: 8664991237, price: 484 },
+      144: { id: 8664991301, price: 557 }
+    },
+    180: {
+      60: { id: 8664991365, price: 343 },
+      72: { id: 8664991429, price: 385 },
+      84: { id: 8664991493, price: 426 },
+      96: { id: 8664991557, price: 468 },
+      120: { id: 8664991621, price: 551 },
+      144: { id: 8664991685, price: 634 }
     }
   }
 };

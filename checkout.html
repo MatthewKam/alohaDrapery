@@ -2,16 +2,18 @@
 <html>
 <head>
 	<title>AlohaDrapery.com</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=1100">
 	<link rel="stylesheet" type="text/css" href="css/checkout.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script type="text/javascript" src="script.js"></script>
-
+	<link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
 </head>
 <body id="checkout">
 	<div id="head">
-		<div id="headtop">
-			<div class="ib" id="logotitle">AlohaDrapery.com</div>
+		<div id="headtopwrap">
+			<div id="headtop">
+				<div class="ib ds" id="logotitle">AlohaDrapery.com</div>
+			</div>
 		</div>
 		<div id="headnav">
 			<div id="headnavwrap">
@@ -32,11 +34,11 @@
 					<h1 id="create">Create Your Own Custom Drapery</h1>
 					<div id="orderform">
 						<div id="toplabels">
-							<div class="toplabels ib">Quantity</div>
-							<div class="toplabels ib" id="fabric">Fabric</div>
-							<div class="toplabels ib" id="fabric">Lining</div>
-							<div class="toplabels ib">Width</div>
-							<div class="toplabels ib">Height</div>
+							<div class="toplabels ib" id="quantityLabel">Quantity</div>
+							<div class="toplabels ib" id="fabricLabel">Fabric</div>
+							<div class="toplabels ib" id="liningLabel">Lining</div>
+							<div class="toplabels ib" id="widthLabel">Width</div>
+							<div class="toplabels ib" id="heightLabel">Height</div>
 							<a class="lrreturn legal_trigger" rel="describelr" href="javascript:void(0);"><div id="leftreturn" class="toplabels ib">Left Return<span class="hide"id="lrquestion">?</span></div></a>
 							<a class="lrreturn legal_trigger" rel="describerr" href="javascript:void(0);"><div id="rightreturn" class="toplabels ib">Right Return<span class="hide"id="rrquestion">?</span></div></a>
 						</div>
@@ -47,21 +49,31 @@
 							<div class="color ib line1" id="c1">
 								<select>
 									<option selected>Select Fabric</option>
-									<optgroup label="Face Fabric">
-										<option value='breezenatural'>Breeze (Natural)</option>
-										<option value='breezetan'>Breeze (Tan)</option>
-										<option value='tradewinds'>Tradewinds</option>
-										<option value='shadow'>Shadow</option>
-										<option value='sand'>Sand</option>
-										<option value='seashore'>Seashore</option>
-										<option value='coral'>Coral</option>
-										<option value='twilightbeige'>Twilight (Beige)</option>
-										<option value='twilightgrey'>Twilight (Grey)</option>
+									<option value='breezenatural'>Breeze (Natural)</option>
+									<option value='breezetan'>Breeze (Tan)</option>
+									<option value='tradewinds'>Tradewinds</option>
+									<option value='shadow'>Shadow</option>
+									<option value='sand'>Sand</option>
+									<option value='seashore'>Seashore</option>
+									<option value='coral'>Coral</option>
+									<option value='twilightbeige'>Twilight (Beige)</option>
+									<option value='twilightgrey'>Twilight (Grey)</option>
+								</select>
+							</div>
+							<div class="lining ib line1" id="l1">
+								<select>
+									<option value='none' selected>Select Lining</option>
+									<optgroup label="Attached Lining">
+										<option value='cloudsIvory'>Clouds - Ivory</option>
+										<option value='cloudsWhite'>Clouds - White</option>
+										<option value='sunset'>Sunset - Blackout</option>
 									</optgroup>
-									<optgroup label="Lining">
-										<option value='clouds'>Clouds (Windsor Ivory/White)</option>
-										<option value='sunset'>Sunset (Blackout)</option>
+									<optgroup label="Separate Lining">
+										<option value='cloudsIvoryAttached'>Clouds - Ivory</option>
+										<option value='cloudsWhiteAttached'>Clouds - White</option>
+										<option value='sunsetAttached'>Sunset - Blackout </option>
 									</optgroup>
+									<option value='none'>None</option>
 								</select>
 							</div>
 							<div class="width ib line1" id="w1">
@@ -88,21 +100,31 @@
 							<div class="color ib line2" id="c2">
 								<select>
 									<option selected>Select Fabric</option>
-									<optgroup label="Face Fabric">
-										<option value='breezenatural'>Breeze (Natural)</option>
-										<option value='breezetan'>Breeze (Tan)</option>
-										<option value='tradewinds'>Tradewinds</option>
-										<option value='shadow'>Shadow</option>
-										<option value='sand'>Sand</option>
-										<option value='seashore'>Seashore</option>
-										<option value='coral'>Coral</option>
-										<option value='twilightbeige'>Twilight (Beige)</option>
-										<option value='twilightgrey'>Twilight (Grey)</option>
+									<option value='breezenatural'>Breeze (Natural)</option>
+									<option value='breezetan'>Breeze (Tan)</option>
+									<option value='tradewinds'>Tradewinds</option>
+									<option value='shadow'>Shadow</option>
+									<option value='sand'>Sand</option>
+									<option value='seashore'>Seashore</option>
+									<option value='coral'>Coral</option>
+									<option value='twilightbeige'>Twilight (Beige)</option>
+									<option value='twilightgrey'>Twilight (Grey)</option>
+								</select>
+							</div>
+							<div class="lining ib line2" id="l2">
+								<select>
+									<option value='none' selected>Select Lining</option>
+									<optgroup label="Attached Lining">
+										<option value='cloudsIvory'>Clouds - Ivory</option>
+										<option value='cloudsWhite'>Clouds - White</option>
+										<option value='sunset'>Sunset - Blackout</option>
 									</optgroup>
-									<optgroup label="Lining">
-										<option value='clouds'>Clouds (Windsor Ivory/White)</option>
-										<option value='sunset'>Sunset (Blackout)</option>
+									<optgroup label="Separate Lining">
+										<option value='cloudsIvoryAttached'>Clouds - Ivory</option>
+										<option value='cloudsWhiteAttached'>Clouds - White</option>
+										<option value='sunsetAttached'>Sunset - Blackout </option>
 									</optgroup>
+									<option value='none'>None</option>
 								</select>
 							</div>
 							<div class="width ib line2" id="w2">
@@ -111,10 +133,10 @@
 							<div class="height ib line2" id="h2">
 								<input placeholder="60 inches" type="text" class="orderinfo"/>
 							</div>
-							<div class="leftreturn ib line1" id="lr2">
+							<div class="leftreturn ib line2" id="lr2">
 								<input placeholder="10 inches" type="text" class="orderinfo"/>
 							</div>
-							<div class="rightreturn ib line1" id="rr2">
+							<div class="rightreturn ib line2" id="rr2">
 								<input placeholder="10 inches" type="text" class="orderinfo"/>
 							</div>
 							<button class="addtocart" onclick="addToCart(this)">Add To Cart</button>
@@ -132,21 +154,31 @@
 							<div class="color ib line3" id="c3">
 								<select>
 									<option selected>Select Fabric</option>
-									<optgroup label="Face Fabric">
-										<option value='breezenatural'>Breeze (Natural)</option>
-										<option value='breezetan'>Breeze (Tan)</option>
-										<option value='tradewinds'>Tradewinds</option>
-										<option value='shadow'>Shadow</option>
-										<option value='sand'>Sand</option>
-										<option value='seashore'>Seashore</option>
-										<option value='coral'>Coral</option>
-										<option value='twilightbeige'>Twilight (Beige)</option>
-										<option value='twilightgrey'>Twilight (Grey)</option>
+									<option value='breezenatural'>Breeze (Natural)</option>
+									<option value='breezetan'>Breeze (Tan)</option>
+									<option value='tradewinds'>Tradewinds</option>
+									<option value='shadow'>Shadow</option>
+									<option value='sand'>Sand</option>
+									<option value='seashore'>Seashore</option>
+									<option value='coral'>Coral</option>
+									<option value='twilightbeige'>Twilight (Beige)</option>
+									<option value='twilightgrey'>Twilight (Grey)</option>
+								</select>
+							</div>
+							<div class="lining ib line3" id="l3">
+								<select>
+									<option value='none' selected>Select Lining</option>
+									<optgroup label="Attached Lining">
+										<option value='cloudsIvory'>Clouds - Ivory</option>
+										<option value='cloudsWhite'>Clouds - White</option>
+										<option value='sunset'>Sunset - Blackout</option>
 									</optgroup>
-									<optgroup label="Lining">
-										<option value='clouds'>Clouds (Windsor Ivory/White)</option>
-										<option value='sunset'>Sunset (Blackout)</option>
+									<optgroup label="Separate Lining">
+										<option value='cloudsIvoryAttached'>Clouds - Ivory</option>
+										<option value='cloudsWhiteAttached'>Clouds - White</option>
+										<option value='sunsetAttached'>Sunset - Blackout </option>
 									</optgroup>
+									<option value='none'>None</option>
 								</select>
 							</div>
 							<div class="width ib line3" id="w3">
@@ -155,10 +187,10 @@
 							<div class="height ib line3" id="h3">
 								<input placeholder="60 inches" type="text" class="orderinfo"/>
 							</div>
-							<div class="leftreturn ib line1" id="lr3">
+							<div class="leftreturn ib line3" id="lr3">
 								<input placeholder="10 inches" type="text" class="orderinfo"/>
 							</div>
-							<div class="rightreturn ib line1" id="rr3">
+							<div class="rightreturn ib line3" id="rr3">
 								<input placeholder="10 inches" type="text" class="orderinfo"/>
 							</div>
 							<button class="addtocart" onclick="addToCart(this)">Add To Cart</button>
@@ -176,21 +208,31 @@
 							<div class="color ib line4" id="c4">
 								<select>
 									<option selected>Select Fabric</option>
-									<optgroup label="Face Fabric">
-										<option value='breezenatural'>Breeze (Natural)</option>
-										<option value='breezetan'>Breeze (Tan)</option>
-										<option value='tradewinds'>Tradewinds</option>
-										<option value='shadow'>Shadow</option>
-										<option value='sand'>Sand</option>
-										<option value='seashore'>Seashore</option>
-										<option value='coral'>Coral</option>
-										<option value='twilightbeige'>Twilight (Beige)</option>
-										<option value='twilightgrey'>Twilight (Grey)</option>
+									<option value='breezenatural'>Breeze (Natural)</option>
+									<option value='breezetan'>Breeze (Tan)</option>
+									<option value='tradewinds'>Tradewinds</option>
+									<option value='shadow'>Shadow</option>
+									<option value='sand'>Sand</option>
+									<option value='seashore'>Seashore</option>
+									<option value='coral'>Coral</option>
+									<option value='twilightbeige'>Twilight (Beige)</option>
+									<option value='twilightgrey'>Twilight (Grey)</option>
+								</select>
+							</div>
+							<div class="lining ib line4" id="l4">
+								<select>
+									<option value='none' selected>Select Lining</option>
+									<optgroup label="Attached Lining">
+										<option value='cloudsIvory'>Clouds - Ivory</option>
+										<option value='cloudsWhite'>Clouds - White</option>
+										<option value='sunset'>Sunset - Blackout</option>
 									</optgroup>
-									<optgroup label="Lining">
-										<option value='clouds'>Clouds (Windsor Ivory/White)</option>
-										<option value='sunset'>Sunset (Blackout)</option>
+									<optgroup label="Separate Lining">
+										<option value='cloudsIvoryAttached'>Clouds - Ivory</option>
+										<option value='cloudsWhiteAttached'>Clouds - White</option>
+										<option value='sunsetAttached'>Sunset - Blackout </option>
 									</optgroup>
+									<option value='none'>None</option>
 								</select>
 							</div>
 							<div class="width ib line4" id="w4">
@@ -199,10 +241,10 @@
 							<div class="height ib line4" id="h4">
 								<input placeholder="60 inches" type="text" class="orderinfo"/>
 							</div>
-							<div class="leftreturn ib line1" id="lr4">
+							<div class="leftreturn ib line4" id="lr4">
 								<input placeholder="10 inches" type="text" class="orderinfo"/>
 							</div>
-							<div class="rightreturn ib line1" id="rr4">
+							<div class="rightreturn ib line4" id="rr4">
 								<input placeholder="10 inches" type="text" class="orderinfo"/>
 							</div>
 							<button class="addtocart" onclick="addToCart(this)">Add To Cart</button>
@@ -220,21 +262,31 @@
 							<div class="color ib line5" id="c5">
 								<select>
 									<option selected>Select Fabric</option>
-									<optgroup label="Face Fabric">
-										<option value='breezenatural'>Breeze (Natural)</option>
-										<option value='breezetan'>Breeze (Tan)</option>
-										<option value='tradewinds'>Tradewinds</option>
-										<option value='shadow'>Shadow</option>
-										<option value='sand'>Sand</option>
-										<option value='seashore'>Seashore</option>
-										<option value='coral'>Coral</option>
-										<option value='twilightbeige'>Twilight (Beige)</option>
-										<option value='twilightgrey'>Twilight (Grey)</option>
+									<option value='breezenatural'>Breeze (Natural)</option>
+									<option value='breezetan'>Breeze (Tan)</option>
+									<option value='tradewinds'>Tradewinds</option>
+									<option value='shadow'>Shadow</option>
+									<option value='sand'>Sand</option>
+									<option value='seashore'>Seashore</option>
+									<option value='coral'>Coral</option>
+									<option value='twilightbeige'>Twilight (Beige)</option>
+									<option value='twilightgrey'>Twilight (Grey)</option>
+								</select>
+							</div>
+							<div class="lining ib line5" id="l5">
+								<select>
+									<option value='none' selected>Select Lining</option>
+									<optgroup label="Attached Lining">
+										<option value='cloudsIvory'>Clouds - Ivory</option>
+										<option value='cloudsWhite'>Clouds - White</option>
+										<option value='sunset'>Sunset - Blackout</option>
 									</optgroup>
-									<optgroup label="Lining">
-										<option value='clouds'>Clouds (Windsor Ivory/White)</option>
-										<option value='sunset'>Sunset (Blackout)</option>
+									<optgroup label="Separate Lining">
+										<option value='cloudsIvoryAttached'>Clouds - Ivory</option>
+										<option value='cloudsWhiteAttached'>Clouds - White</option>
+										<option value='sunsetAttached'>Sunset - Blackout </option>
 									</optgroup>
+									<option value='none'>None</option>
 								</select>
 							</div>
 							<div class="width ib line5" id="w5">
@@ -243,10 +295,10 @@
 							<div class="height ib line5" id="h5">
 								<input placeholder="60 inches" type="text" class="orderinfo"/>
 							</div>
-							<div class="leftreturn ib line1" id="lr5">
+							<div class="leftreturn ib line5" id="lr5">
 								<input placeholder="10 inches" type="text" class="orderinfo"/>
 							</div>
-							<div class="rightreturn ib line1" id="rr5">
+							<div class="rightreturn ib line5" id="rr5">
 								<input placeholder="10 inches" type="text" class="orderinfo"/>
 							</div>
 							<button class="addtocart" onclick="addToCart(this)">Add To Cart</button>
@@ -264,21 +316,31 @@
 							<div class="color ib line6" id="c6">
 								<select>
 									<option selected>Select Fabric</option>
-									<optgroup label="Face Fabric">
-										<option value='breezenatural'>Breeze (Natural)</option>
-										<option value='breezetan'>Breeze (Tan)</option>
-										<option value='tradewinds'>Tradewinds</option>
-										<option value='shadow'>Shadow</option>
-										<option value='sand'>Sand</option>
-										<option value='seashore'>Seashore</option>
-										<option value='coral'>Coral</option>
-										<option value='twilightbeige'>Twilight (Beige)</option>
-										<option value='twilightgrey'>Twilight (Grey)</option>
+									<option value='breezenatural'>Breeze (Natural)</option>
+									<option value='breezetan'>Breeze (Tan)</option>
+									<option value='tradewinds'>Tradewinds</option>
+									<option value='shadow'>Shadow</option>
+									<option value='sand'>Sand</option>
+									<option value='seashore'>Seashore</option>
+									<option value='coral'>Coral</option>
+									<option value='twilightbeige'>Twilight (Beige)</option>
+									<option value='twilightgrey'>Twilight (Grey)</option>
+								</select>
+							</div>
+							<div class="lining ib line6" id="l6">
+								<select>
+									<option value='none' selected>Select Lining</option>
+									<optgroup label="Attached Lining">
+										<option value='cloudsIvory'>Clouds - Ivory</option>
+										<option value='cloudsWhite'>Clouds - White</option>
+										<option value='sunset'>Sunset - Blackout</option>
 									</optgroup>
-									<optgroup label="Lining">
-										<option value='clouds'>Clouds (Windsor Ivory/White)</option>
-										<option value='sunset'>Sunset (Blackout)</option>
+									<optgroup label="Separate Lining">
+										<option value='cloudsIvoryAttached'>Clouds - Ivory</option>
+										<option value='cloudsWhiteAttached'>Clouds - White</option>
+										<option value='sunsetAttached'>Sunset - Blackout </option>
 									</optgroup>
+									<option value='none'>None</option>
 								</select>
 							</div>
 							<div class="width ib line6" id="w6">
@@ -287,10 +349,10 @@
 							<div class="height ib line6" id="h6">
 								<input placeholder="60 inches" type="text" class="orderinfo"/>
 							</div>
-							<div class="leftreturn ib line1" id="lr6">
+							<div class="leftreturn ib line6" id="lr6">
 								<input placeholder="10 inches" type="text" class="orderinfo"/>
 							</div>
-							<div class="rightreturn ib line1" id="rr6">
+							<div class="rightreturn ib line6" id="rr6">
 								<input placeholder="10 inches" type="text" class="orderinfo"/>
 							</div>
 							<button class="addtocart" onclick="addToCart(this)">Add To Cart</button>
@@ -308,21 +370,31 @@
 							<div class="color ib line7" id="c7">
 								<select>
 									<option selected>Select Fabric</option>
-									<optgroup label="Face Fabric">
-										<option value='breezenatural'>Breeze (Natural)</option>
-										<option value='breezetan'>Breeze (Tan)</option>
-										<option value='tradewinds'>Tradewinds</option>
-										<option value='shadow'>Shadow</option>
-										<option value='sand'>Sand</option>
-										<option value='seashore'>Seashore</option>
-										<option value='coral'>Coral</option>
-										<option value='twilightbeige'>Twilight (Beige)</option>
-										<option value='twilightgrey'>Twilight (Grey)</option>
+									<option value='breezenatural'>Breeze (Natural)</option>
+									<option value='breezetan'>Breeze (Tan)</option>
+									<option value='tradewinds'>Tradewinds</option>
+									<option value='shadow'>Shadow</option>
+									<option value='sand'>Sand</option>
+									<option value='seashore'>Seashore</option>
+									<option value='coral'>Coral</option>
+									<option value='twilightbeige'>Twilight (Beige)</option>
+									<option value='twilightgrey'>Twilight (Grey)</option>
+								</select>
+							</div>
+							<div class="lining ib line7" id="l7">
+								<select>
+									<option value='none' selected>Select Lining</option>
+									<optgroup label="Attached Lining">
+										<option value='cloudsIvory'>Clouds - Ivory</option>
+										<option value='cloudsWhite'>Clouds - White</option>
+										<option value='sunset'>Sunset - Blackout</option>
 									</optgroup>
-									<optgroup label="Lining">
-										<option value='clouds'>Clouds (Windsor Ivory/White)</option>
-										<option value='sunset'>Sunset (Blackout)</option>
+									<optgroup label="Separate Lining">
+										<option value='cloudsIvoryAttached'>Clouds - Ivory</option>
+										<option value='cloudsWhiteAttached'>Clouds - White</option>
+										<option value='sunsetAttached'>Sunset - Blackout </option>
 									</optgroup>
+									<option value='none'>None</option>
 								</select>
 							</div>
 							<div class="width ib line7" id="w7">
@@ -331,10 +403,10 @@
 							<div class="height ib line7" id="h7">
 								<input placeholder="60 inches" type="text" class="orderinfo"/>
 							</div>
-							<div class="leftreturn ib line1" id="lr7">
+							<div class="leftreturn ib line7" id="lr7">
 								<input placeholder="10 inches" type="text" class="orderinfo"/>
 							</div>
-							<div class="rightreturn ib line1" id="rr7">
+							<div class="rightreturn ib line7" id="rr7">
 								<input placeholder="10 inches" type="text" class="orderinfo"/>
 							</div>
 							<button class="addtocart" onclick="addToCart(this)">Add To Cart</button>
@@ -352,21 +424,31 @@
 							<div class="color ib line8" id="c8">
 								<select>
 									<option selected>Select Fabric</option>
-									<optgroup label="Face Fabric">
-										<option value='breezenatural'>Breeze (Natural)</option>
-										<option value='breezetan'>Breeze (Tan)</option>
-										<option value='tradewinds'>Tradewinds</option>
-										<option value='shadow'>Shadow</option>
-										<option value='sand'>Sand</option>
-										<option value='seashore'>Seashore</option>
-										<option value='coral'>Coral</option>
-										<option value='twilightbeige'>Twilight (Beige)</option>
-										<option value='twilightgrey'>Twilight (Grey)</option>
+									<option value='breezenatural'>Breeze (Natural)</option>
+									<option value='breezetan'>Breeze (Tan)</option>
+									<option value='tradewinds'>Tradewinds</option>
+									<option value='shadow'>Shadow</option>
+									<option value='sand'>Sand</option>
+									<option value='seashore'>Seashore</option>
+									<option value='coral'>Coral</option>
+									<option value='twilightbeige'>Twilight (Beige)</option>
+									<option value='twilightgrey'>Twilight (Grey)</option>
+								</select>
+							</div>
+							<div class="lining ib line8" id="l8">
+								<select>
+									<option value='none' selected>Select Lining</option>
+									<optgroup label="Attached Lining">
+										<option value='cloudsIvory'>Clouds - Ivory</option>
+										<option value='cloudsWhite'>Clouds - White</option>
+										<option value='sunset'>Sunset - Blackout</option>
 									</optgroup>
-									<optgroup label="Lining">
-										<option value='clouds'>Clouds (Windsor Ivory/White)</option>
-										<option value='sunset'>Sunset (Blackout)</option>
+									<optgroup label="Separate Lining">
+										<option value='cloudsIvoryAttached'>Clouds - Ivory</option>
+										<option value='cloudsWhiteAttached'>Clouds - White</option>
+										<option value='sunsetAttached'>Sunset - Blackout </option>
 									</optgroup>
+									<option value='none'>None</option>
 								</select>
 							</div>
 							<div class="width ib line8" id="w8">
@@ -375,10 +457,10 @@
 							<div class="height ib line8" id="h8">
 								<input placeholder="60 inches" type="text" class="orderinfo"/>
 							</div>
-							<div class="leftreturn ib line1" id="lr8">
+							<div class="leftreturn ib line8" id="lr8">
 								<input placeholder="10 inches" type="text" class="orderinfo"/>
 							</div>
-							<div class="rightreturn ib line1" id="rr8">
+							<div class="rightreturn ib line8" id="rr8">
 								<input placeholder="10 inches" type="text" class="orderinfo"/>
 							</div>
 							<button class="addtocart" onclick="addToCart(this)">Add To Cart</button>
@@ -395,21 +477,31 @@
 							<div class="color ib line9" id="c9">
 								<select>
 									<option selected>Select Fabric</option>
-									<optgroup label="Face Fabric">
-										<option value='breezenatural'>Breeze (Natural)</option>
-										<option value='breezetan'>Breeze (Tan)</option>
-										<option value='tradewinds'>Tradewinds</option>
-										<option value='shadow'>Shadow</option>
-										<option value='sand'>Sand</option>
-										<option value='seashore'>Seashore</option>
-										<option value='coral'>Coral</option>
-										<option value='twilightbeige'>Twilight (Beige)</option>
-										<option value='twilightgrey'>Twilight (Grey)</option>
+									<option value='breezenatural'>Breeze (Natural)</option>
+									<option value='breezetan'>Breeze (Tan)</option>
+									<option value='tradewinds'>Tradewinds</option>
+									<option value='shadow'>Shadow</option>
+									<option value='sand'>Sand</option>
+									<option value='seashore'>Seashore</option>
+									<option value='coral'>Coral</option>
+									<option value='twilightbeige'>Twilight (Beige)</option>
+									<option value='twilightgrey'>Twilight (Grey)</option>
+								</select>
+							</div>
+							<div class="lining ib line9" id="l9">
+								<select>
+									<option value='none' selected>Select Lining</option>
+									<optgroup label="Attached Lining">
+										<option value='cloudsIvory'>Clouds - Ivory</option>
+										<option value='cloudsWhite'>Clouds - White</option>
+										<option value='sunset'>Sunset - Blackout</option>
 									</optgroup>
-									<optgroup label="Lining">
-										<option value='clouds'>Clouds (Windsor Ivory/White)</option>
-										<option value='sunset'>Sunset (Blackout)</option>
+									<optgroup label="Separate Lining">
+										<option value='cloudsIvoryAttached'>Clouds - Ivory</option>
+										<option value='cloudsWhiteAttached'>Clouds - White</option>
+										<option value='sunsetAttached'>Sunset - Blackout </option>
 									</optgroup>
+									<option value='none'>None</option>
 								</select>
 							</div>
 							<div class="width ib line9" id="w9">
@@ -418,10 +510,10 @@
 							<div class="height ib line9" id="h9">
 								<input placeholder="60 inches" type="text" class="orderinfo"/>
 							</div>
-							<div class="leftreturn ib line1" id="lr9">
+							<div class="leftreturn ib line9" id="lr9">
 								<input placeholder="10 inches" type="text" class="orderinfo"/>
 							</div>
-							<div class="rightreturn ib line1" id="rr9">
+							<div class="rightreturn ib line9" id="rr9">
 								<input placeholder="10 inches" type="text" class="orderinfo"/>
 							</div>
 							<button class="addtocart" onclick="addToCart(this)">Add To Cart</button>
@@ -443,7 +535,7 @@
 	<div id="checkout_footer">
 		<div id="footercontent">
 			<div id="footerleft" class="ib">
-				<h1>AlohaDrapery.com</h1>
+				<h1 class="ds">AlohaDrapery.com</h1>
 				<a href="index.html#aloha"><p>About Us</p></a>
 				<a href="checkout.html"><p>Order Now</p></a>
 				<a href="index.html#samples"><p>Free Samples</p></a>
@@ -463,7 +555,7 @@
 				<div id="warranty" class="legal_popover">
 		            <div class="legal_contain" id="warrantycontain">
 		                <div class="contentcontain">
-		                    <span class="headerLegal">LIMITED LIFETIME WARRANTY</span>
+		                    <span class="headerLegal ds">Limited Lifetime Warranty</span>
 		                     <p>All products furnished by AlohaDrapery.com are under warranty to be free from defects to workmanship and materials as long as the original purchaser owns it.  The warranty is non-transferable and must be accompanied by a proof of purchase.
 
 		                     This warranty does not cover normal wear and tear or any damage or loss caused by accidents, alterations, misuse, abuse or extraordinary use, exposure to salt air, excessive temperatures or sunlight, excessive moisture or water, insect damage, improper installation, cleaning or other maintenance.
@@ -488,7 +580,7 @@
 			    <div id="returns" class="legal_popover">
 		            <div class="legal_contain" id="returnscontain">
 		                <div class="contentcontain">
-		                    <span class="headerLegal">RETURNS AND EXCHANGE POLICY</span>
+		                    <span class="headerLegal ds">Returns & Exchange Policy</span>
 		                     <p>AlohaDrapery.com manufactures all of its orders on an individualized and customized basis and therefore operates under a No Return/No Exchange Policy, unless covered under the Limited Lifetime Warranty. If alterations are necessary, AlohaDrapery.com would be pleased to offer design and alteration services at reasonable prices. All freight costs associated with the alteration shall be paid by the customer. Upon receipt of payment, all orders shall be processed immediately and a No Cancellation Policy takes effect.</p>
 
 		                </div>
@@ -499,7 +591,7 @@
 			    <div id="describelr" class="legal_popover">
 		            <div class="legal_contain" id="leftreturncontain">
 		                <div class="contentcontain">
-		                    <span class="headerLegal">Left Return (C)</span>
+		                    <span class="headerLegal ds">Left Return (C)</span>
 		                    
 		                </div>
 		                <div class="close_legal"><div class="close">Close</div></div>
@@ -509,7 +601,7 @@
 			    <div id="describerr" class="legal_popover">
 		            <div class="legal_contain" id="rightreturncontain">
 		                <div class="contentcontain">
-		                   <span class="headerLegal">Right Return (D)</span>
+		                   <span class="headerLegal ds">Right Return (D)</span>
 
 		                </div>
 		                <div class="close_legal"><div class="close">Close</div></div>
@@ -519,9 +611,8 @@
 			    <div id="contact" class="legal_popover">
 		            <div class="legal_contain" id="contactcontain">
 		                <div class="contentcontain">
-		                    <span class="headerLegal">Contact</span>
+		                    <span class="headerLegal ds">Contact</span>
 		                    <p><strong>AlohaDrapery.com</strong> is cultivating a worldwide effort to share its expertise in the manufacturing and delivering of custom sized fabric draperies at great value.  Place your <a href="checkout.html">Order Now!</a> and benefit from the factory direct savings.</p>
-		                    <br/><br/>
 		                    <p>For questions, please email us at:<br/>
 		                   	<a href="mailto:questions@alohadrapery.com?subject=Questions%20for%20AlohaDrapery.com">questions@alohadrapery.com</a>
 		                    </p>

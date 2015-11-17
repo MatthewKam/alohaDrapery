@@ -4,6 +4,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #ece8e1;
 }
+.ds{font-family: 'Dancing Script', cursive;}
 .ib{display:inline-block;vertical-align: top;}
 .tar{text-align: right;}
 .tal{text-align: left;}
@@ -12,7 +13,9 @@ body{
 div#wrap {
     background-color: #ece8e1;
     padding-top:30px;
+    min-width: 1100px;
 }
+
 div#ad {
     font-size: 83px;
     color: white;
@@ -39,10 +42,11 @@ div#pleaseplace {
     margin-top: 20px;
 }
 /*TOPBAR*/
-#topbar{
-	/*background-color:#99cc66;*/
+#topbar {
+    /* background-color: #99cc66; */
     width: 100%;
-    height:100%;
+    min-width: 1100px;
+    height: 100%;
     background-color: rgba(0,0,0,.5);
 }
 #topbarwrap{
@@ -97,11 +101,15 @@ div#head {
 div#headnavwrap a {
     color: black;
 }
+div#headtopwrap {
+    width: 1060px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 div#headtop {
-	width: 1100px;
-	margin:0 auto;
+    margin: 0 auto;
     border-bottom: 1px solid lightgray;
-    padding: 10px 0;
+    padding: 10px 0px;
 }
 #logo1{
 	width:100px;
@@ -112,9 +120,8 @@ div#headtop {
 #logotitle {
     color: #cc0033;
     font-weight: bold;
-    font-size: 30px;
-    letter-spacing: -.6px;
-    margin-top: 10px;
+    font-size: 35px;
+    text-shadow: 1px 1px 1px grey;
 }
 div#logotitle span {
     font-size: 22px;
@@ -262,14 +269,14 @@ div#headnav {
 }*/
 div.carouselcopy {
     padding: 50px 0;
-   text-align: left;
+    text-align: left;
     height: 110px;
     margin-left: 90px;
     position: absolute;
     bottom: 0;
-    width: 100%;
-    font-size: 64px;
+    font-size: 92px;
     font-weight: bold;
+    text-shadow: 2px 2px 2px white;
 }
 
 
@@ -282,7 +289,7 @@ div#section2{
 div#aloha {
     margin-top: 40px;
     margin-bottom: 20px;
-    margin-left: 10px;
+    padding: 0 20px;
 }
 div#aloha p {
     margin: 0;
@@ -295,6 +302,7 @@ div#aloha p {
     width: 350px;
     margin: 0 auto;
     margin-bottom: 20px;
+    font-size: 45px;
 }
 /*div#video {
     height: 360px;
@@ -502,16 +510,34 @@ div#samplewrap {
     margin-top: 10px;
     margin-left: 10px;
 }
+.swatcheswrap::selection .swatches:nth-child(1n) .description{
+    display:block;
+}
 .swatcheswrap:hover .swatches:nth-child(1n) .description{
     display:block;
+}
+#swatch2wrap:hover #swatch2{
+    margin-left: -115px;
 }
 #swatch3wrap:hover #swatch3{
     margin-left: -215px;
 }
+#swatch5wrap:hover #swatch5{
+    margin-left: -115px;
+}
 #swatch6wrap:hover #swatch6{
     margin-left: -215px;
 }
+#swatch8wrap:hover #swatch8{
+    margin-left: -115px;
+}
 #swatch9wrap:hover #swatch9{
+    margin-left: -215px;
+}
+#swatch11wrap:hover #swatch11{
+    margin-left: -115px;
+}
+#swatch12wrap:hover #swatch12{
     margin-left: -215px;
 }
 /*#swatch8wrap:hover #swatch8{
@@ -545,9 +571,12 @@ div#samplewrap {
     background:url(../images/shadow.jpg)center top no-repeat;
 }
 #swatch10{
-    background:url(../images/clouds.jpg)center top no-repeat;
+    background:url(../images/cloudsi.jpg)center top no-repeat;
 }
 #swatch11{
+    background:url(../images/cloudsw.jpg)center top no-repeat;
+}
+#swatch12{
     background:url(../images/roclon.jpg)center top no-repeat;
 }
 select.formfields {
@@ -694,13 +723,14 @@ div#getquotesnow p {
 div#index_footer {
     margin-top: 30px;
     border-top: 2px solid lightgrey;
-    padding-top: 30px;
+        padding: 30px 0;
     background-color: rgba(255,255,255,0.7);
 }
-#footercontent{
-    width:1100px;
-    margin:0 auto;
+#footercontent {
+    margin: 0 auto;
     padding-bottom: 40px;
+    padding: 0 20px;
+    width: 1060px;
 }
 div#footerleft {
     line-height: 40px;
@@ -709,12 +739,12 @@ div#footerleft {
 div#footermid {
     width: 340px;
 }
-#footerright{
-    width:340px;
-    padding: 30px;
+#footerright {
+    width: 225px;
     padding-top: 0;
     line-height: 45px;
     text-align: right;
+    float: right;
 }
 #footerright div#logo {
     width: 150px;
@@ -828,6 +858,12 @@ a.legal_trigger:hover {
 #privacy{
     display:none;
 }
+#attachedLining{
+    display:none;
+}
+#separateLining{
+    display:none;
+}
 div.legal_popover {
     z-index: 11;
     top: 0;
@@ -858,7 +894,7 @@ div#headnavwrap a {
 }
 span.headerLegal {
     font-weight: bold;
-    font-size: 24px;
+    font-size: 54px;
 }
 .contentcontain p {
     margin-top: 20px;
@@ -882,14 +918,15 @@ div#lining {
 }
 
 div#lininginfo {
-        width: 120px;
+    width: 100%;
     line-height: 30px;
     text-align: center;
     margin-top: 40px;
 }
 div#lininginfo a {
-    color: black;
-    text-decoration: none;
+    color:black;
+    display: inline-block;
+    text-decoration: underline;
 }
 .totalprice.totals.ib {
     font-weight: bold;
@@ -902,14 +939,11 @@ div#footerleft h1 {
 
 }
 .lead-scroll {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    margin-left: -70px;
     padding: 0px 0;
     width: 140px;
     height: 100px;
     z-index: 100;
+    margin: 0 auto;
 }
 .lead-scroll .arrows {
    width: 60px;
@@ -943,10 +977,18 @@ svg {
     -webkit-animation-delay: 0s;
 }
 div#toparrows {
-        margin-bottom: 100px;
+    margin-top: 140px;
 }
 a#anchor div {
     font-size: 24px;
+}
+img#attachedImage {
+    width: 200px;
+    box-shadow: 1px 1px grey;
+    margin-top: 20px;
+}
+div#attachedLiningContain p {
+    margin-top: 0;
 }
 @keyframes arrow {
     0% {
