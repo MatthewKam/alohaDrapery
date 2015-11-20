@@ -423,6 +423,9 @@ div#ordernowbutton{
     display:block;
 }
 /*RIGHT*/
+.attachedLining:hover .hide{
+    display:inline-block;
+}
 button#getQuote {
     background-color: #ff9966;
     padding: 10px 30px;

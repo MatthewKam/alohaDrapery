@@ -133,6 +133,9 @@ div#toplabels {
     text-align: center;
     margin-left: 5px;
 }
+div#quantityLabel {
+    margin-top: -10px;
+}
 div#fabricLabel {
     width: 200px;
 }
