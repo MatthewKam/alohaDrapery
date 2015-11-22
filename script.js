@@ -129,22 +129,28 @@
 });
 
 function getQuote() {
-  var quoteWidth = closest(widthArray, $('#quoteWidth').val());
-  var quoteHeight = closest(heightArray, $('#quoteHeight').val());
-  var quoteFabric = $('#fabricQuote').val();
-  var quoteLining = $('#liningQuote').val();
-  var lining = 0;
-  if (quoteWidth === undefined) {
-    alert('Please choose a width between 0 and 180"');
-  } else if (quoteHeight === undefined) {
-    alert('Please choose a height between 0 and 144"');
-  }
-  if (quoteLining != 'none') {
-    lining = drapes[quoteLining][quoteWidth][quoteHeight]['price'];
-  }
-  if (quoteFabric != 'Select Fabric') {
-    var price = drapes[quoteFabric][quoteWidth][quoteHeight]['price'];
-    setQuote(price + lining);
+  if($('#quoteWidth').val() == "" || $('#quoteHeight').val() == "") {
+    alert("Please enter a width and height")
+  } else {
+    var quoteWidth = closest(widthArray, $('#quoteWidth').val());
+    var quoteHeight = closest(heightArray, $('#quoteHeight').val());
+    var quoteFabric = $('#fabricQuote').val();
+    var quoteLining = $('#liningQuote').val();
+    var lining = 0;
+    if (quoteWidth === undefined) {
+      alert('Please choose a width between 0 and 180"');
+    } else if (quoteHeight === undefined) {
+      alert('Please choose a height between 0 and 144"');
+    }
+    if (quoteLining != 'none') {
+      lining = drapes[quoteLining][quoteWidth][quoteHeight]['price'];
+    }
+    if (quoteFabric != 'Select Fabric') {
+      var price = drapes[quoteFabric][quoteWidth][quoteHeight]['price'];
+      setQuote(price + lining);
+    } else {
+      alert('Please select a fabric.')
+    }
   }
 }
 function setQuote(amount) {
