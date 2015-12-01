@@ -1,4 +1,4 @@
- $(document).ready(function(){
+$(document).ready(function(){
     $('a[href^="#"]').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
             && location.hostname == this.hostname) {
@@ -158,7 +158,6 @@ function setQuote(amount) {
 }
 
 function addToCart(elem) {
-
     var f = document.createElement('form');
     f.style.display = 'none';
     elem.parentNode.appendChild(f);
@@ -167,19 +166,22 @@ function addToCart(elem) {
     f.target = 'cartthingy';
     var v = document.createElement('input');
     v.setAttribute('type', 'hidden');
-    v.setAttribute('name', 'id');
+    v.setAttribute('name', 'id[]');
     v.setAttribute('value', getId(elem));
     f.appendChild(v);
+    if($(elem).siblings(".lining").children()[0].value != 'none') {
+      var l = document.createElement('input');
+      l.setAttribute('type', 'hidden');
+      l.setAttribute('name', 'id[]');
+      l.setAttribute('value', getLiningId(elem));
+      f.appendChild(l);
+    }
+
     var r = document.createElement('input');
     r.setAttribute('type', 'hidden');
     r.setAttribute('name', 'return_to');
     r.setAttribute('value', 'back');
     f.appendChild(r);
-    // var l = document.createElement('input');
-    // l.setAttribute('type', 'hidden');
-    // l.setAttribute('name', 'return_to');
-    // l.setAttribute('value', 'back');
-    // f.appendChild(l);
     var x = document.createElement('input');
     x.setAttribute('type', 'hidden');
     x.setAttribute('name', 'quantity');
@@ -216,7 +218,6 @@ function getId(elem) {
     var buyWidth = closest(widthArray, parseInt($(elem).siblings(".width").children()[0].value, 10) + parseInt($(elem).siblings(".leftreturn").children()[0].value, 10) + parseInt($(elem).siblings(".rightreturn").children()[0].value, 10));
     var buyHeight = closest(heightArray, $(elem).siblings(".height").children()[0].value);
     var fabric = $(elem).siblings(".color").children()[0].value;
-    // var lining = $(elem).siblings(".lining").children()[0].value;
     if (fabric == 'Select Fabric') {
       alert('Please select a fabric');
     } else if (buyWidth === undefined) {
@@ -224,14 +225,25 @@ function getId(elem) {
     } else if (buyHeight === undefined) {
       alert('Please choose a height between 0 and 144');
     }
-    // if (lining == 'Select Lining') {
-    //   alert('Please select a Lining');
-    // } else if (buyWidth === undefined) {
-    //   alert('Please choose a total width between 0 and 180');
-    // } else if (buyHeight === undefined) {
-    //   alert('Please choose a height between 0 and 144');
-    // }
     return drapes[fabric][buyWidth][buyHeight]['id'];
+}
+
+function getLiningId(elem) {
+    var buyWidth = closest(widthArray, parseInt($(elem).siblings(".width").children()[0].value, 10) + parseInt($(elem).siblings(".leftreturn").children()[0].value, 10) + parseInt($(elem).siblings(".rightreturn").children()[0].value, 10));
+    var buyHeight = closest(heightArray, $(elem).siblings(".height").children()[0].value);
+    var lining = $(elem).siblings(".lining").children()[0].value;
+    if (lining == 'Select Lining') {
+      alert('Please select a Lining');
+    } else if (buyWidth === undefined) {
+      alert('Please choose a total width between 0 and 180');
+    } else if (buyHeight === undefined) {
+      alert('Please choose a height between 0 and 144');
+    } else if (lining == 'none') {
+      return "";
+    } else {
+      return drapes[lining][buyWidth][buyHeight]['id'];
+    }
+
 }
 
 var drapes = {
@@ -1385,6 +1397,7 @@ var drapes = {
   },
   cloudsWhiteAttached: {
     28: {
+      // This price can't be right.
       60: { id: 8664987781, price: 111111 },
       72: { id: 8664987845, price: 87 },
       84: { id: 8664987909, price: 93 },
