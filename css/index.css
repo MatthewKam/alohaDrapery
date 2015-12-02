@@ -252,13 +252,39 @@ div#headnav {
     background-position: -150px -340px;
     background-size: 115%;
 }
-#carousel2 {
+#singlePanelImage {
     background: url(../images/singlePanel.jpg)center top no-repeat;
+    background-size: contain;
+    height: 600px;
+    width: 300px;
+}
+#doublePanelImage {
+    background: url(../images/pairPanel.jpg)center top no-repeat;
+    background-size: contain;
+    height: 600px;
+    width: 366px;
+}
+#carousel2 {
+    background-color: white;
+}
+div#c2copy {
+    width: 405px;
+    position: relative;
+    font-size: 40px;
+    text-align: center;
+    margin-left: 0;
+    padding: 0;
+    height: auto;   
+    padding-top: 380px;
+    text-shadow: 2px 2px 2px lightgrey;
+}
+#carousel2 {
+    /*background: url(../images/singlePanel.jpg)center top no-repeat;
     height: 750px;
     margin: 0 auto;
     background-position: center -100px;
     background-size: contain;
-    background-color: rgba(255,255,255,.5);
+    background-color: rgba(255,255,255,.5);*/
 }
 /*#carousel3{
     background: url(../images/fabrics.png)center top no-repeat;
@@ -278,13 +304,25 @@ div.carouselcopy {
     font-weight: bold;
     text-shadow: 2px 2px 2px white;
 }
-
-
+#s3leftcopy p#describeSand {
+    font-size: 16px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+div#freight {
+    text-align: center;
+    margin-top: 10px;
+}
 /*SECTION2*/
 div#section2{
     border-top: 2px solid lightgrey;
     margin-top: 30px;
     
+}
+div#forOther {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
 }
 div#aloha {
     margin-top: 40px;
