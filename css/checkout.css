@@ -59,9 +59,12 @@ div#headnavwrap {
     text-align: center;
 }
 #headnav .navbar {
-    width: 215px;
+    width: 150px;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+#headnav .navbar:hover {
+    text-decoration: underline;
 }
 div#headnav {
     border-bottom: 1px solid lightgrey;

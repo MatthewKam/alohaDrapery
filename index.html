@@ -20,15 +20,16 @@
 					Your browser does not support this video.
 				</video>
 				
-				<div id="pleaseplace">Please place your ORDER and benefit from the factory direct service and savings.</div>
+				<div id="pleaseplace">The best value direct from the manufacturer</div>
 				<div class="lead-scroll" id="toparrows">
 		          	<a href="#head" id="anchor" class="lead-link" data-placement="top" data-toggle="tooltip">
+		          		
 				        <svg class="arrows">
 				            <path class="a1" stroke-linecap="round" stroke-linejoin="round" d="M0 0 L30 32 L60 0"></path>
 				            <path class="a2" stroke-linecap="round" stroke-linejoin="round" d="M0 20 L30 52 L60 20"></path>
 				            <path class="a3" stroke-linecap="round" stroke-linejoin="round" d="M0 40 L30 72 L60 40"></path>
 				        </svg>
-				        
+				        <p id="clickHere">Click Here</p>
 		          	</a>
 
 		      	</div>
@@ -46,11 +47,12 @@
 		<div id="headnav">
 			<div id="headnavwrap">
 				<a href="#aloha"><div class="ib navbar">About Us</div></a>
-				<a href="checkout.html"><div class="ib navbar">Order Now</div></a>
+				<a href="#photos"><div class="ib navbar">Photo Gallery</div></a>
+				<a href="#quote" ><div class="ib navbar">Get An Estimate</div></a>
+				<a href="checkout.html"><div class="ib navbar">Click To Order</div></a>
 				<a href="#samples"><div class="ib navbar">Free Samples</div></a>
-				<a href="#quote" ><div class="ib navbar">Get A Quote</div></a>
-				<a class="legal_trigger" rel="contact" href="javascript:void(0);"><div class="ib navbar">Contact</div></a>
-
+				<a class="legal_trigger" rel="contact" href="javascript:void(0);"><div class="ib navbar">Contact Us</div></a>	
+				<a class="legal_trigger" rel="faq" href="javascript:void(0);"><div class="ib navbar">FAQs</div></a>
 			</div>
 		</div>
 	</div>
@@ -63,20 +65,24 @@
 
 			<div class="carousel">
 				<div class="carousel-inner">
-					<input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+					<!-- <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
 
 					<div class=" carousel-item" id="firstImage">
 					  <div id="carousel1" class="carouselimages">
 					  		<div id="c1copy" class="carouselcopy ds">Customized</div>
 					  </div>
-					</div>
+					</div> -->
 
-					<input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+					<input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
 
-					<div class=" carousel-item" id="secondImage">
+					<div class=" carousel-item" id="firstImage">
 					  <div id="carousel2">
 					  		<div id="singlePanelImage" class="ib"></div>
-					  		<div id="c2copy" class="carouselcopy ds ib">"Serving the State of Hawaii"<br/>Enjoy</div>
+					  		<div id="c2copy" class="carouselcopy ds ib">
+				  			<div id="servingIslands">"Serving the State of Hawaii"</div>
+				  			<div id="islandsWrap"><img src="images/hawaiiIslands.gif"></div>
+					  		<div id="enjoyBenefits">Enjoy the benefits of savings & experienced artisans.</div>
+					  	</div>
 					  		<div id="doublePanelImage" class="ib"></div>
 					  </div>
 					</div>
@@ -89,7 +95,7 @@
 					  </div>
 					</div> -->
 
-					<label for="carousel-2" class="carousel-control prev control-1">
+					<!-- <label for="carousel-2" class="carousel-control prev control-1">
 					  <div class="leftside ib"></div>
 					</label>
 					<label for="carousel-2" class="carousel-control next control-1">
@@ -100,7 +106,7 @@
 					</label>
 					<label for="carousel-1" class="carousel-control next control-2">
 					  <div class="rightside ib"></div>
-					</label>
+					</label> -->
 					<!-- <label for="carousel-2" class="carousel-control prev control-3">
 					  <div class="leftside ib"></div>
 					</label>
@@ -124,7 +130,7 @@
 			<div id="singlePanel" class="ib">
 				<div id="s3leftcopy">
 					<p>Most Popular Fabric</p>
-					<h1>SAND</h1>
+					<h1>SAND - Best Value</h1>
 					<p id="describeSand">3-Fold French Pleat, Corner Weights, 100% Fullness, Stainless Steel Hooks</p>
 					<div id="sandimage">
 						<div id="ordernowbutton">
@@ -247,7 +253,7 @@
 
 
 				</div>
-				<div id="forOther">For other fabric selections, get and estimate below.</div>
+				<div id="forOther">For other fabric selections, get an estimate below.</div>
 			</div>
 			<div id="samples" class="ib">
 				<div id="getquote">
@@ -474,17 +480,32 @@
 		</div>
 		<div id="getquotesnow">
 					<h1 id="quote">Get an Estimate</h1>
-					<p>Place in measurements</p>
+					<p>Insert measurements & fabric selection.</p>
 					<div id="form">
 						<div class="ib">
 							<!-- <div class="label">Width</div> -->
-							<input id='quoteWidth' type="text" class="formfields" placeholder="Width (inches)"/>
+							<input id='quoteWidth' type="text" class="formfields" placeholder="Width(inches)"/>
+						</div>
+						<div class="ib">
+							<select class="formfields" id="widthFractions">
+								<option selected>Width Fractions</option>
+								<option>1/4 inch</option>
+								<option>1/2 inch</option>
+								<option>3/4 inch</option>
+							</select>
 						</div>
 						<div class="ib">
 							<!-- <div class="label">Height</div> -->
-							<input id='quoteHeight' type="text" class="formfields" placeholder="Height (inches)"/>
+							<input id='quoteHeight' type="text" class="formfields" placeholder="Height(inches)"/>
 						</div>
-
+						<div class="ib">
+							<select class="formfields" id="heightFractions">
+								<option selected>Height Fractions</option>
+								<option>1/4 inch</option>
+								<option>1/2 inch</option>
+								<option>3/4 inch</option>
+							</select>
+						</div>
 						<div class="ib">
 
 							<select id='fabricQuote' type="text" class="formfields">
@@ -537,11 +558,13 @@
 		<div id="footercontent">
 			<div id="footerleft" class="ib">
 				<h1 class="ds">AlohaDrapery.com</h1>
-				<a href="#aloha"><p>About Us</p></a>
-				<a href="checkout.html"><p>Order Now</p></a>
-				<a href="#samples"><p>Free Samples</p></a>
-				<a href="#quote"><p>Get a Quote</p></a>
-				<a class="legal_trigger" rel="contact" href="javascript:void(0);"><p>Contact</p></a>
+				<a href="#aloha"><div class="footerBar">About Us</div></a>
+				<a href="#photos"><div class="footerBar">Photo Gallery</div></a>
+				<a href="#quote" ><div class="footerBar">Get An Estimate</div></a>
+				<a href="checkout.html"><div class="footerBar">Click To Order</div></a>
+				<a href="#samples"><div class="footerBar">Free Samples</div></a>
+				<a class="legal_trigger" rel="contact" href="javascript:void(0);"><div class="footerBar">Contact Us</div></a>	
+				<a class="legal_trigger" rel="faq" href="javascript:void(0);"><div class="footerBar">FAQs</div></a>
 			</div>
 			<div id="footermid" class="ib">
 				<!-- Follow Us on Facebook. Instagram. Google Plus. Twitter. -->

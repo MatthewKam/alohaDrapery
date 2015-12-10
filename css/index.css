@@ -22,6 +22,11 @@ div#ad {
     text-shadow: 2px 2px 2px black;
     padding-top: 230px;
 }
+p#clickHere {
+    font-size: 28px;
+    font-weight: normal;
+    margin-top: 20px;
+}
 video#bgvid { 
     position: fixed;
     top: 50%;
@@ -134,9 +139,12 @@ div#headnavwrap {
     text-align: center;
 }
 #headnav .navbar {
-    width: 215px;
+    width: 150px;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+#headnav .navbar:hover {
+    text-decoration: underline;
 }
 div#headnav {
     border-bottom: 1px solid lightgrey;
@@ -144,7 +152,15 @@ div#headnav {
 
 
 /*SECTION1*/
-
+div#islandsWrap img {
+    width: 370px;
+    margin-top: 70px;
+}
+div#enjoyBenefits {
+    width: 380px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
 /*CAROUSEL*/
 .carousel {
     position: relative;
@@ -275,7 +291,7 @@ div#c2copy {
     margin-left: 0;
     padding: 0;
     height: auto;   
-    padding-top: 380px;
+    padding-top: 50px;
     text-shadow: 2px 2px 2px lightgrey;
 }
 #carousel2 {
@@ -360,8 +376,12 @@ div#aloha p {
     font-size: 60px;
 }
 */
-
-
+select#widthFractions {
+    width: 80px;
+}
+select#heightFractions {
+    width: 80px;
+}
 /*SECTION3*/
 
 /*LEFT*/
