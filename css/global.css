@@ -1,0 +1,233 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ece8e1;
+}
+.ds{font-family: 'Dancing Script', cursive;}
+.ib{display:inline-block;vertical-align: top;}
+.tar{text-align: right;}
+.tal{text-align: left;}
+.tac{text-align: center;}
+.hide{display: none;}
+div#wrap {
+    background-color: #ece8e1;
+    padding-top:30px;
+    min-width: 1100px;
+}
+/*NAVBAR*/
+div#head {
+    background-color: white;
+    min-width: 1100px;
+}
+div#headnavwrap a {
+    color: black;
+}
+div#headtopwrap {
+    width: 1060px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+div#headtop {
+    margin: 0 auto;
+    border-bottom: 1px solid lightgray;
+    padding: 10px 0px;
+}
+#logo1{
+	width:100px;
+	height:50px;
+	border: 1px solid lightgrey;
+	margin-right:10px;
+}
+#logotitle {
+    color: #cc0033;
+    font-weight: bold;
+    font-size: 35px;
+    text-shadow: 1px 1px 1px grey;
+}
+div#logotitle span {
+    font-size: 22px;
+    font-style: italic;
+    font-weight: normal;
+}
+div#headnavwrap {
+    width: 1100px;
+    margin:0 auto;
+    text-align: center;
+}
+#headnav .navbar {
+    width: 150px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#headnav .navbar:hover {
+    text-decoration: underline;
+}
+div#headnav {
+    border-bottom: 1px solid lightgrey;
+}
+div#headnavwrap a {
+    display: inline-block;
+}
+div#exclusiveoffer {
+    float: right;
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+
+
+
+/*FOOTER*/
+.legal_popover{
+	display:none;
+	background: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+}
+.legal_contain {
+    width: 700px;
+    margin: 0 auto;
+    height: 540px;
+    margin-top: 5%;
+    background-color: white;
+    padding: 30px;
+   
+}
+.contentcontain {
+    overflow-x: scroll;
+    height: 495px;
+    line-height: 27px;	
+}
+span.headerLegal {
+    text-align: center;
+    font-size: 48px;
+    padding-left: 10px;
+    line-height: 79px;
+}
+div.pageFooter {
+    margin-top: 30px;
+    border-top: 2px solid lightgrey;
+        padding: 30px 0;
+    background-color: rgba(255,255,255,0.7);
+}
+#footercontent {
+    margin: 0 auto;
+    padding-bottom: 40px;
+    padding: 0 20px;
+    width: 1060px;
+}
+div#footerleft {
+    line-height: 40px;
+    width: 340px
+}
+div#footermid {
+    width: 340px;
+}
+#footerright {
+    width: 225px;
+    padding-top: 0;
+    line-height: 45px;
+    text-align: right;
+    float: right;
+}
+#footerright div#logo {
+    width: 150px;
+    height: 50px;
+    border: 1px solid lightgrey;
+    margin-left: 190px;
+}
+div#footerleft a {
+    color: black;
+    text-decoration: none;
+}
+div#footerleft a:hover {
+    text-decoration: underline;
+}
+#popup {
+    display: none;
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 9999;
+    clear: none;
+    background-color: rgba(0,0,0,0.5);
+}
+span.header {
+
+    font-size: 30px;
+    font-weight: bold;
+}
+.header {
+    color: #C00;
+}
+#popupmain {
+    border: 3px solid #d6d6d6;
+    background-color: white;
+    width: 760px;
+    height: 440px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -240px 0 0 -400px;
+    padding: 20px;
+}
+#popupcontent {
+    width: 760px;
+    height: 400px;
+    overflow-x: hidden;
+}
+#popupclose {
+    width: 760px;
+    height: 30px;
+    padding-top: 10px;
+    text-align: right;
+    cursor: pointer;
+}
+div.close_legal {
+    height: 30px;
+    width: 140px;
+    background: -webkit-linear-gradient(#78c44c, #427422);
+    background: -o-linear-gradient(#78c44c, #427422);
+    background: -moz-linear-gradient(#78c44c, #427422);
+    background: linear-gradient(#78c44c, #427422);
+    border-radius: 5px;
+    border: 1px solid #78c44c;
+    box-shadow: 0px 2px 4px black;
+        text-align: center;
+    color: white;
+    float: right;
+    margin-top: 20px;
+    cursor:pointer;
+}
+div.close {
+    width: 138px;
+    text-align: center;
+    border-radius: 4px;
+    border-top: 1px solid white;
+    color: white;
+    font-size: 16px;
+    margin-left: 1px;
+    line-height: 30px;
+}
+a.footerlink{
+    cursor:pointer;
+}
+a.legal_trigger {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+a.legal_trigger:hover {
+    text-decoration: underline;
+}

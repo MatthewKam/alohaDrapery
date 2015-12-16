@@ -4,6 +4,7 @@
 	<title>AlohaDrapery.com</title>
 	<meta name="viewport" content="width=1100">
 	<link rel="stylesheet" type="text/css" href="css/checkout.css">
+	<link rel="stylesheet" type="text/css" href="css/global.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script type="text/javascript" src="script.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
@@ -66,12 +67,12 @@
 							<div class="lining ib line1" id="l1">
 								<select>
 									<option selected>Select Lining</option>
-									<optgroup label="Attached Lining">
+									<optgroup label="Attached Lining"class="attachedLiningOptGroup">
 										<option value='cloudsIvory'>Clouds - Ivory</option>
 										<option value='cloudsWhite'>Clouds - White</option>
 										<option value='sunset'>Sunset - Blackout</option>
 									</optgroup>
-									<optgroup label="Separate Lining">
+									<optgroup label="Separate Lining" class="separateLiningOptGroup" >
 										<option value='cloudsIvoryAttached'>Clouds - Ivory</option>
 										<option value='cloudsWhiteAttached'>Clouds - White</option>
 										<option value='sunsetAttached'>Sunset - Blackout </option>
@@ -101,6 +102,15 @@
 							<div class="quantity ib line2" id="q2">
 								<input placeholder="11" type="text" class="orderinfo"/>
 							</div>
+							<script type="text/javascript">
+								$(document).ready(function(){
+								    $("div.color select").each(function(){
+								        if($(this).val()== 'none'){
+							            	$('.lining .separateLiningOptGroup').prop('disabled');
+								    	}
+								    });
+								});
+							</script>
 							<div class="color ib line2" id="c2">
 								<select>
 									<option selected>Select Fabric</option>
@@ -119,12 +129,12 @@
 							<div class="lining ib line2" id="l2">
 								<select>
 									<option value='none' selected>Select Lining</option>
-									<optgroup label="Attached Lining">
+									<optgroup label="Attached Lining" class="attachedLiningOptGroup">
 										<option value='cloudsIvory'>Clouds - Ivory</option>
 										<option value='cloudsWhite'>Clouds - White</option>
 										<option value='sunset'>Sunset - Blackout</option>
 									</optgroup>
-									<optgroup label="Separate Lining">
+									<optgroup label="Separate Lining" class="separateLiningOptGroup" >
 										<option value='cloudsIvoryAttached'>Clouds - Ivory</option>
 										<option value='cloudsWhiteAttached'>Clouds - White</option>
 										<option value='sunsetAttached'>Sunset - Blackout </option>
@@ -175,12 +185,12 @@
 							<div class="lining ib line3" id="l3">
 								<select>
 									<option value='none' selected>Select Lining</option>
-									<optgroup label="Attached Lining">
+									<optgroup label="Attached Lining"class="attachedLiningOptGroup">
 										<option value='cloudsIvory'>Clouds - Ivory</option>
 										<option value='cloudsWhite'>Clouds - White</option>
 										<option value='sunset'>Sunset - Blackout</option>
 									</optgroup>
-									<optgroup label="Separate Lining">
+									<optgroup label="Separate Lining" class="separateLiningOptGroup" >
 										<option value='cloudsIvoryAttached'>Clouds - Ivory</option>
 										<option value='cloudsWhiteAttached'>Clouds - White</option>
 										<option value='sunsetAttached'>Sunset - Blackout </option>
@@ -231,12 +241,12 @@
 							<div class="lining ib line4" id="l4">
 								<select>
 									<option value='none' selected>Select Lining</option>
-									<optgroup label="Attached Lining">
+									<optgroup label="Attached Lining"class="attachedLiningOptGroup">
 										<option value='cloudsIvory'>Clouds - Ivory</option>
 										<option value='cloudsWhite'>Clouds - White</option>
 										<option value='sunset'>Sunset - Blackout</option>
 									</optgroup>
-									<optgroup label="Separate Lining">
+									<optgroup label="Separate Lining" class="separateLiningOptGroup" >
 										<option value='cloudsIvoryAttached'>Clouds - Ivory</option>
 										<option value='cloudsWhiteAttached'>Clouds - White</option>
 										<option value='sunsetAttached'>Sunset - Blackout </option>
@@ -287,12 +297,12 @@
 							<div class="lining ib line5" id="l5">
 								<select>
 									<option value='none' selected>Select Lining</option>
-									<optgroup label="Attached Lining">
+									<optgroup label="Attached Lining"class="attachedLiningOptGroup">
 										<option value='cloudsIvory'>Clouds - Ivory</option>
 										<option value='cloudsWhite'>Clouds - White</option>
 										<option value='sunset'>Sunset - Blackout</option>
 									</optgroup>
-									<optgroup label="Separate Lining">
+									<optgroup label="Separate Lining" class="separateLiningOptGroup" >
 										<option value='cloudsIvoryAttached'>Clouds - Ivory</option>
 										<option value='cloudsWhiteAttached'>Clouds - White</option>
 										<option value='sunsetAttached'>Sunset - Blackout </option>
@@ -343,7 +353,7 @@
 							<div class="lining ib line6" id="l6">
 								<select>
 									<option value='none' selected>Select Lining</option>
-									<optgroup label="Attached Lining">
+									<optgroup label="Attached Lining"class="attachedLiningOptGroup">
 										<option value='cloudsIvory'>Clouds - Ivory</option>
 										<option value='cloudsWhite'>Clouds - White</option>
 										<option value='sunset'>Sunset - Blackout</option>
@@ -399,12 +409,12 @@
 							<div class="lining ib line7" id="l7">
 								<select>
 									<option value='none' selected>Select Lining</option>
-									<optgroup label="Attached Lining">
+									<optgroup label="Attached Lining"class="attachedLiningOptGroup">
 										<option value='cloudsIvory'>Clouds - Ivory</option>
 										<option value='cloudsWhite'>Clouds - White</option>
 										<option value='sunset'>Sunset - Blackout</option>
 									</optgroup>
-									<optgroup label="Separate Lining">
+									<optgroup label="Separate Lining" class="separateLiningOptGroup" >
 										<option value='cloudsIvoryAttached'>Clouds - Ivory</option>
 										<option value='cloudsWhiteAttached'>Clouds - White</option>
 										<option value='sunsetAttached'>Sunset - Blackout </option>
@@ -455,12 +465,12 @@
 							<div class="lining ib line8" id="l8">
 								<select>
 									<option value='none' selected>Select Lining</option>
-									<optgroup label="Attached Lining">
+									<optgroup label="Attached Lining"class="attachedLiningOptGroup">
 										<option value='cloudsIvory'>Clouds - Ivory</option>
 										<option value='cloudsWhite'>Clouds - White</option>
 										<option value='sunset'>Sunset - Blackout</option>
 									</optgroup>
-									<optgroup label="Separate Lining">
+									<optgroup label="Separate Lining" class="separateLiningOptGroup" >
 										<option value='cloudsIvoryAttached'>Clouds - Ivory</option>
 										<option value='cloudsWhiteAttached'>Clouds - White</option>
 										<option value='sunsetAttached'>Sunset - Blackout </option>
@@ -510,12 +520,12 @@
 							<div class="lining ib line9" id="l9">
 								<select>
 									<option value='none' selected>Select Lining</option>
-									<optgroup label="Attached Lining">
+									<optgroup label="Attached Lining"class="attachedLiningOptGroup">
 										<option value='cloudsIvory'>Clouds - Ivory</option>
 										<option value='cloudsWhite'>Clouds - White</option>
 										<option value='sunset'>Sunset - Blackout</option>
 									</optgroup>
-									<optgroup label="Separate Lining">
+									<optgroup label="Separate Lining" class="separateLiningOptGroup" >
 										<option value='cloudsIvoryAttached'>Clouds - Ivory</option>
 										<option value='cloudsWhiteAttached'>Clouds - White</option>
 										<option value='sunsetAttached'>Sunset - Blackout </option>
