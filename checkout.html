@@ -10,23 +10,10 @@
 	<link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
 </head>
 <body id="checkout">
-	<div id="head">
-		<div id="headtopwrap">
-			<div id="headtop">
-				<div class="ib ds" id="logotitle">AlohaDrapery.com</div>
-			</div>
-		</div>
-		<div id="headnav">
-			<div id="headnavwrap">
-				<a href="index.html#aloha"><div class="ib navbar">About Us</div></a>
-				<a href="index.html#photos"><div class="ib navbar">Photo Gallery</div></a>
-				<a href="index.html#quote" ><div class="ib navbar">Get An Estimate</div></a>
-				<a href="checkout.html"><div class="ib navbar">Click To Order</div></a>
-				<a href="index.html#samples"><div class="ib navbar">Free Samples</div></a>
-				<a class="legal_trigger" rel="contact" href="javascript:void(0);"><div class="ib navbar">Contact Us</div></a>	
-				<a class="legal_trigger" rel="faq" href="javascript:void(0);"><div class="ib navbar">FAQs</div></a>
-			</div>
-		</div>
+	<div class="headerSection" id="pGHeader">
+		<script type="text/javascript">
+			$('.headerSection').load('includes/header.html');
+		</script>
 	</div>
 
 
@@ -45,9 +32,9 @@
 							<a class="lrreturn legal_trigger" rel="describerr" href="javascript:void(0);"><div id="rightreturn" class="toplabels ib">Right Return<span class="hide"id="rrquestion">?</span></div></a>
 							<div class="toplabels ib" id="heightLabel">Height</div>
 						</div>
-						<div>
+						<div id="add1" class="repeaterWrapper">
 							<div class="quantity ib line1" id="q1">
-								<input placeholder="11" type="text" class="orderinfo quantity"/>
+								<input placeholder="Each" type="text" class="orderinfo quantity"/>
 							</div>
 							<div class="color ib line1" id="c1">
 								<select>
@@ -67,7 +54,7 @@
 							<div class="lining ib line1" id="l1">
 								<select>
 									<option selected>Select Lining</option>
-									<optgroup label="Attached Lining"class="attachedLiningOptGroup">
+									<optgroup label="Attached Lining" class="attachedLiningOptGroup">
 										<option value='cloudsIvory'>Clouds - Ivory</option>
 										<option value='cloudsWhite'>Clouds - White</option>
 										<option value='sunset'>Sunset - Blackout</option>
@@ -98,21 +85,15 @@
 								<div id="addmore1" class="addmore ib">Add</div>
 							</div>
 						</div>
-						<div id="add2" class="hide">
+
+						<div id="add2" class="repeaterWrapper hide">
 							<div class="quantity ib line2" id="q2">
-								<input placeholder="11" type="text" class="orderinfo"/>
+								<input placeholder="Each" type="text" class="orderinfo"/>
 							</div>
-							<script type="text/javascript">
-								$(document).ready(function(){
-								    $("div.color select").each(function(){
-								        if($(this).val()== 'none'){
-							            	$('.lining .separateLiningOptGroup').prop('disabled');
-								    	}
-								    });
-								});
-							</script>
+
+
 							<div class="color ib line2" id="c2">
-								<select>
+								<select class="derp herp line2 dumb stuff">
 									<option selected>Select Fabric</option>
 									<option value='breezenatural'>Breeze (Natural)</option>
 									<option value='breezetan'>Breeze (Tan)</option>
@@ -126,6 +107,7 @@
 									<option value='none'>No Face Fabric</option>
 								</select>
 							</div>
+
 							<div class="lining ib line2" id="l2">
 								<select>
 									<option value='none' selected>Select Lining</option>
@@ -163,9 +145,9 @@
 							</div>
 						</div>
 
-						<div id="add3" class="hide">
+						<div id="add3" class="repeaterWrapper hide">
 							<div class="quantity ib line3" id="q3">
-								<input placeholder="11" type="text" class="orderinfo"/>
+								<input placeholder="Each" type="text" class="orderinfo"/>
 							</div>
 							<div class="color ib line3" id="c3">
 								<select>
@@ -219,9 +201,9 @@
 							</div>
 						</div>
 
-						<div id="add4" class="hide">
+						<div id="add4" class="repeaterWrapper hide">
 							<div class="quantity ib line4" id="q4">
-								<input placeholder="11" type="text" class="orderinfo"/>
+								<input placeholder="Each" type="text" class="orderinfo"/>
 							</div>
 							<div class="color ib line4" id="c4">
 								<select>
@@ -275,9 +257,9 @@
 							</div>
 						</div>
 
-						<div id="add5" class="hide">
+						<div id="add5" class="repeaterWrapper hide">
 							<div class="quantity ib line5" id="q5">
-								<input placeholder="11" type="text" class="orderinfo"/>
+								<input placeholder="Each" type="text" class="orderinfo"/>
 							</div>
 							<div class="color ib line5" id="c5">
 								<select>
@@ -331,9 +313,9 @@
 							</div>
 						</div>
 
-						<div id="add6" class="hide">
+						<div id="add6" class="repeaterWrapper hide">
 							<div class="quantity ib line6" id="q6">
-								<input placeholder="11" type="text" class="orderinfo"/>
+								<input placeholder="Each" type="text" class="orderinfo"/>
 							</div>
 							<div class="color ib line6" id="c6">
 								<select>
@@ -387,9 +369,9 @@
 							</div>
 						</div>
 
-						<div id="add7" class="hide">
+						<div id="add7" class="repeaterWrapper hide">
 							<div class="quantity ib line7" id="q7">
-								<input placeholder="11" type="text" class="orderinfo"/>
+								<input placeholder="Each" type="text" class="orderinfo"/>
 							</div>
 							<div class="color ib line7" id="c7">
 								<select>
@@ -443,9 +425,9 @@
 							</div>
 						</div>
 
-						<div id="add8" class="hide">
+						<div id="add8" class="repeaterWrapper hide">
 							<div class="quantity ib line8" id="q8">
-								<input placeholder="11" type="text" class="orderinfo"/>
+								<input placeholder="Each" type="text" class="orderinfo"/>
 							</div>
 							<div class="color ib line8" id="c8">
 								<select>
@@ -498,9 +480,9 @@
 							</div>
 						</div>
 
-						<div id="add9" class="hide">
+						<div id="add9" class="repeaterWrapper hide">
 							<div class="quantity ib line9" id="q9">
-								<input placeholder="11" type="text" class="orderinfo"/>
+								<input placeholder="Each" type="text" class="orderinfo"/>
 							</div>
 							<div class="color ib line9" id="c9">
 								<select>
@@ -555,105 +537,39 @@
 				</div>
 			</div>
 		</div>
-
 		<div id="shopifycart">
 			<iframe src="https://alohadrapery-com.myshopify.com/cart" id="iframe" width="100%" height="100%"name="cartthingy" style="border:none;outline:none;"></iframe>
 		</div>
 	</div>
 
-
-	<div id="checkout_footer">
-		<div id="footercontent">
-			<div id="footerleft" class="ib">
-				<h1 class="ds">AlohaDrapery.com</h1>
-				<a href="index.html#aloha"><div class="footerBar">About Us</div></a>
-				<a href="index.html#photos"><div class="footerBar">Photo Gallery</div></a>
-				<a href="index.html#quote" ><div class="footerBar">Get An Estimate</div></a>
-				<a href="checkout.html"><div class="footerBar">Click To Order</div></a>
-				<a href="index.html#samples"><div class="footerBar">Free Samples</div></a>
-				<a class="legal_trigger" rel="contact" href="javascript:void(0);"><div class="footerBar">Contact Us</div></a>	
-				<a class="legal_trigger" rel="faq" href="javascript:void(0);"><div class="footerBar">FAQs</div></a>
-			</div>
-			<div id="footermid" class="ib">
-				<!-- Follow Us on Facebook. Instagram. Google Plus. Twitter. -->
-			</div>
-			<div id="footerright" class="ib">
-				<div>Honolulu, HI</div>
-				<a class="legal_trigger" rel="warranty" href="javascript:void(0);">Warranty</a>
-				<a class="legal_trigger" rel="returns" href="javascript:void(0);">Returns</a>
-
-
-
-				<div id="warranty" class="legal_popover">
-		            <div class="legal_contain" id="warrantycontain">
-		                <div class="contentcontain">
-		                    <span class="headerLegal ds">Limited Lifetime Warranty</span>
-		                     <p>All products furnished by AlohaDrapery.com are under warranty to be free from defects to workmanship and materials as long as the original purchaser owns it.  The warranty is non-transferable and must be accompanied by a proof of purchase.
-
-		                     This warranty does not cover normal wear and tear or any damage or loss caused by accidents, alterations, misuse, abuse or extraordinary use, exposure to salt air, excessive temperatures or sunlight, excessive moisture or water, insect damage, improper installation, cleaning or other maintenance.
-
-		                     There will be variations in color, grain, and texture that are characteristic of natural products.  Such natural conditions are not considered defective and are excluded from the manufacturer's warranty.
-
-		                     Upon determination that a defect in workmanship or materials exists, AlohaDrapery.com will issue a return authorization and arrange the return at no charge.  AlohaDrapery.com at it's discretion will repair the product or provide a replacement product.  Replacements will be made to the original specifications only.  Discontinued items will be replaced with the closest equivalent current product. Cost for installation charges or lost profits are not included in the warranty.  No other warranties are expressed or implied.
-
-		                     Note:  We are responsible for the fabrication of your orders to your specification and not responsible for any design decisions including the suitability of fabric selections. (See Returns and Exchange Policy)
-
-		                     AlohaDrapery.com reserves the right to make changes or improvements on its products without incurring any obligation and without being required to make any corresponding changes or improvements in products previously manufactured or sold, and to discontinue products previously manufactured or sold, and to discontinue products at any time without notice.  All specifications subject to change without notice.
-
-		                     For all warranty service, please contact our customer service department at alohacare@AlohaDrapery.com.
-							</p>
-
-		                </div>
-		                <div class="close_legal"><div class="close">Close</div></div>
-			        </div>
-			    </div>
-
-
-			    <div id="returns" class="legal_popover">
-		            <div class="legal_contain" id="returnscontain">
-		                <div class="contentcontain">
-		                    <span class="headerLegal ds">Returns & Exchange Policy</span>
-		                     <p>AlohaDrapery.com manufactures all of its orders on an individualized and customized basis and therefore operates under a No Return/No Exchange Policy, unless covered under the Limited Lifetime Warranty. If alterations are necessary, AlohaDrapery.com would be pleased to offer design and alteration services at reasonable prices. All freight costs associated with the alteration shall be paid by the customer. Upon receipt of payment, all orders shall be processed immediately and a No Cancellation Policy takes effect.</p>
-
-		                </div>
-		                <div class="close_legal"><div class="close">Close</div></div>
-			        </div>
-			    </div>
-
-			    <div id="describelr" class="legal_popover">
-		            <div class="legal_contain" id="leftreturncontain">
-		                <div class="contentcontain">
-		                    <span class="headerLegal ds">Left Return (C)</span>
-
-		                </div>
-		                <div class="close_legal"><div class="close">Close</div></div>
-			        </div>
-			    </div>
-
-			    <div id="describerr" class="legal_popover">
-		            <div class="legal_contain" id="rightreturncontain">
-		                <div class="contentcontain">
-		                   <span class="headerLegal ds">Right Return (D)</span>
-
-		                </div>
-		                <div class="close_legal"><div class="close">Close</div></div>
-			        </div>
-			    </div>
-
-			    <div id="contact" class="legal_popover">
-		            <div class="legal_contain" id="contactcontain">
-		                <div class="contentcontain">
-		                    <span class="headerLegal ds">Contact</span>
-		                    <p><strong>AlohaDrapery.com</strong> is cultivating a worldwide effort to share its expertise in the manufacturing and delivering of custom sized fabric draperies at great value.  Place your <a href="checkout.html">Order Now!</a> and benefit from the factory direct savings.</p>
-		                    <p>For questions, please email us at:<br/>
-		                   	<a href="mailto:questions@alohadrapery.com?subject=Questions%20for%20AlohaDrapery.com">questions@alohadrapery.com</a>
-		                    </p>
-		                </div>
-		                <div class="close_legal"><div class="close">Close</div></div>
-			        </div>
-			    </div>
-			</div>
-		</div>
+	<div class="footerSection" id="pGFooter">
+		<script type="text/javascript">
+			$('.footerSection').load('includes/footer.html');	
+		</script>
 	</div>
+</div>
+<script type="text/javascript">
+	function filterAttachedLiningDD(index) {
+		var $colorSelect = $('#add' + index).find('div.color select');
+		var $liningSelect = $('#add' + index).find('div.lining select');
+
+		if($colorSelect.val() == 'none') {
+				$liningSelect.find('.attachedLiningOptGroup').attr('disabled', 'disabled');
+			} else {
+				$liningSelect.find('.attachedLiningOptGroup').removeAttr('disabled');
+			}
+		}
+	}
+	$(document).ready(function(){
+		$('div.color select').change(function(evt) {
+			var parentId = $(this).closest('.repeaterWrapper').attr('id');
+			var expr = /add([0-9]+)/g;
+			var result = expr.exec(parentId);
+			var ourNumber = result[1];
+			filterAttachedLiningDD(ourNumber);
+		});
+	});
+</script>
+
 </body>
 </html>

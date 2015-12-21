@@ -1,1 +1,21 @@
-FAQs.css
+div#body {
+    width: 980px;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.5);
+    padding: 40px;
+    margin-top: 30px;
+}
+#body h1{
+	text-align: center;
+	text-decoration: underline;
+}
+div#body p{
+    margin: 0;
+}
+#faqs{
+	margin-top:0;
+}
+#body .bold{
+	text-decoration: underline;
+	margin-top: 5px;
+}

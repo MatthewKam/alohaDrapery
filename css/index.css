@@ -85,12 +85,12 @@ div#topbarinner a {
 /*SECTION1*/
 div#islandsWrap img {
     width: 370px;
-    margin-top: 70px;
+    margin-top: 20px;
 }
 div#enjoyBenefits {
     width: 380px;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 /*CAROUSEL*/
 .carousel {
@@ -308,10 +308,31 @@ div#aloha p {
 }
 */
 select#widthFractions {
-    width: 80px;
+    width: 60px;
 }
 select#heightFractions {
-    width: 80px;
+    width: 60px;
+}
+input#quoteWidth {
+    width: 160px;
+}
+input#quoteHeight
+{
+    width: 160px;
+}
+p.inches {
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-bottom: 0;
+}
+div#form .padLeft {
+    padding-left: 80px;
+}
+select#fabricQuote {
+    width: 285px;
+}
+select#liningQuote {
+    width: 285px;
 }
 /*SECTION3*/
 
@@ -696,6 +717,8 @@ p#exclusivebottom {
 }
 div#form {
     text-align: center;
+    width: 450px;
+    margin: 0 auto;
 }
 div#getquotesnow p {
     text-align: center;

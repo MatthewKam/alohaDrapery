@@ -69,7 +69,7 @@
 					  		<div id="singlePanelImage" class="ib"></div>
 					  		<div id="c2copy" class="carouselcopy ds ib">
 				  			<div id="servingIslands">"Serving the State of Hawaii"</div>
-				  			<div id="islandsWrap"><img src="images/hawaiiIslands.gif"></div>
+				  			<div id="islandsWrap"><img src="images/hawaiianIslands.png"></div>
 					  		<div id="enjoyBenefits">Enjoy the benefits of savings & experienced artisans.</div>
 					  	</div>
 					  		<div id="doublePanelImage" class="ib"></div>
@@ -110,7 +110,7 @@
 		<div id="section2">
 			<div id="aloha" class="ib">
 				<h1 id="alohadrapery" class="ds">AlohaDrapery.com</h1>
-	  			<p>In the Hawaiian language, the translation of the word <strong>Aloha</strong> is "alo" (the presence or face to face) and "ha" (breath).  To live with the <strong>Spirit of Aloha</strong> is to simply love oneself first and to share the positive energy and experiences with others. In this spirit, <strong>AlohaDrapery.com</strong> is cultivating a worldwide effort to share its expertise in the manufacturing and delivering of custom sized fabric draperies at great value.  Please place your <a href="checkout.html">ORDER</a> and benefit from the factory direct service and savings.</p>
+	  			<p>In the Hawaiian language, the translation of the word <strong>Aloha</strong> is "alo" (the presence or face to face) and "ha" (breath).  To live with the <strong>Spirit of Aloha</strong> is to simply love oneself first and to share the positive energy and experiences with others. In this spirit, <strong>AlohaDrapery.com</strong> is cultivating a worldwide effort to share its expertise in the manufacturing and delivering of custom sized fabric draperies at great value.  Please place your <a href="checkout.html">ORDER</a> and benefit from the service and savings we offer.</p>
 			</div>
 
 		</div>
@@ -455,8 +455,8 @@
 							Lining sold <u>Separate</u> or <a href="#"><a class="legal_trigger attachedLining" rel="attachedLining" href="docs/attachedLining.html">Attached<span class="hide">?</span></a>
 						</div>
 						<div class="" id="samplewrap">
-							<a id="freesamplelink" href="mailto:samples@alohadrapery.com?subject=Free%20Samples%20&amp;body=Please%20fill%20in%20your%20information%20to%20get%20your%20Free%20Samples%20Today!%0A%0AFull%20Name%3A%0AAddress%3A%0AWhich%20fabrics%20did%20you%20want%20to%20sample%3F%0A%0AThank%20you%2C%0AFrom%20AlohaDrapery.com">
-								<div id="freesamples">Get Your Free Samples Now!</div>
+							<a id="freesamplelink" href="mailto:samples@alohadrapery.com?subject=Free%20Swatches%20&amp;body=Please%20fill%20in%20your%20information%20to%20get%20your%20Free%20Samples%20Today!%0A%0AFull%20Name%3A%0AAddress%3A%0AWhich%20fabrics%20did%20you%20want%20to%20sample%3F%0A%0AThank%20you%2C%0AFrom%20AlohaDrapery.com">
+								<div id="freesamples">Get Your Free Swatches Now!</div>
 							</a>
 						</div>
 					</div>
@@ -471,62 +471,70 @@
 					<h1 id="quote">Get an Estimate</h1>
 					<p>Insert measurements & fabric selection.</p>
 					<div id="form">
-						<div class="ib">
-							<!-- <div class="label">Width</div> -->
-							<input id='quoteWidth' type="text" class="formfields" placeholder="Width(inches)"/>
-						</div>
-						<div class="ib">
-							<select class="formfields" id="widthFractions">
-								<option selected>Width Fractions</option>
-								<option>1/4 inch</option>
-								<option>1/2 inch</option>
-								<option>3/4 inch</option>
-							</select>
-						</div>
-						<div class="ib">
-							<!-- <div class="label">Height</div> -->
-							<input id='quoteHeight' type="text" class="formfields" placeholder="Height(inches)"/>
-						</div>
-						<div class="ib">
-							<select class="formfields" id="heightFractions">
-								<option selected>Height Fractions</option>
-								<option>1/4 inch</option>
-								<option>1/2 inch</option>
-								<option>3/4 inch</option>
-							</select>
-						</div>
-						<div class="ib">
+						<div id="widthAndHeight" class="tal padLeft">
+							<div class="ib">
+								<!-- <div class="label">Width</div> -->
+								<input id='quoteWidth' type="text" class="formfields" placeholder="Width"/>
+							</div>
+							<div class="ib">
+								<select class="formfields" id="widthFractions">
+									<option selected>0/0</option>
+									<option>1/4</option>
+									<option>1/2</option>
+									<option>3/4</option>
+								</select>
+							</div>
+							<p class="ib inches">Inches</p>
+							<br/>
+							<div class="ib">
+								<!-- <div class="label">Height</div> -->
+								<input id='quoteHeight' type="text" class="formfields" placeholder="Height"/>
+							</div>
+							<div class="ib">
+								<select class="formfields" id="heightFractions">
+									<option selected>0/0</option>
+									<option>1/4 </option>
+									<option>1/2 </option>
+									<option>3/4 </option>
+								</select>
+							</div>
+							<p class="ib inches">Inches</p>
+							<br/>
+						</div>	
+						<div id="selectFabrics" class="tal padLeft">
+							<div class="ib">
 
-							<select id='fabricQuote' type="text" class="formfields">
-								<option selected>Select Fabric</option>
-								<option value='breezenatural'>Breeze (White)</option>
-								<option value='breezetan'>Breeze (Tan)</option>
-								<option value='tradewinds'>Tradewinds</option>
-								<option value='shadow'>Shadow</option>
-								<option value='sand'>Sand</option>
-								<option value='seashore'>Seashore</option>
-								<option value='coral'>Coral</option>
-								<option value='twilightbeige'>Twilight (Beige)</option>
-								<option value='twilightgrey'>Twilight (Grey)</option>
-							</select>
-						</div>
-						<div class="ib">
-							<select id='liningQuote' class="formfields">
-								<option value='none' selected>Select Lining</option>
-									<optgroup label="Attached Lining">
-										<option value='cloudsIvory'>Clouds - Ivory</option>
-										<option value='cloudsWhite'>Clouds - White</option>
-										<option value='sunset'>Sunset - Blackout</option>
-									</optgroup>
-									<optgroup label="Separate Lining">
-										<option value='cloudsIvoryAttached'>Clouds - Ivory</option>
-										<option value='cloudsWhiteAttached'>Clouds - White</option>
-										<option value='sunsetAttached'>Sunset - Blackout </option>
-									</optgroup>
-									<option value='none'>None</option>
-							</select>
-						</div>
-
+								<select id='fabricQuote' type="text" class="formfields">
+									<option selected>Select Fabric</option>
+									<option value='breezenatural'>Breeze (White)</option>
+									<option value='breezetan'>Breeze (Tan)</option>
+									<option value='tradewinds'>Tradewinds</option>
+									<option value='shadow'>Shadow</option>
+									<option value='sand'>Sand</option>
+									<option value='seashore'>Seashore</option>
+									<option value='coral'>Coral</option>
+									<option value='twilightbeige'>Twilight (Beige)</option>
+									<option value='twilightgrey'>Twilight (Grey)</option>
+								</select>
+							</div>
+							<br/>
+							<div class="ib">
+								<select id='liningQuote' class="formfields">
+									<option value='none' selected>Select Lining</option>
+										<optgroup label="Attached Lining">
+											<option value='cloudsIvory'>Clouds - Ivory</option>
+											<option value='cloudsWhite'>Clouds - White</option>
+											<option value='sunset'>Sunset - Blackout</option>
+										</optgroup>
+										<optgroup label="Separate Lining">
+											<option value='cloudsIvoryAttached'>Clouds - Ivory</option>
+											<option value='cloudsWhiteAttached'>Clouds - White</option>
+											<option value='sunsetAttached'>Sunset - Blackout </option>
+										</optgroup>
+										<option value='none'>None</option>
+								</select>
+							</div>
+						</div>	
 						<div>
 							<p id="exclusivebottom" class="tac"><i>Exclusive Hawaii Offer</i></p>
 							<button id='getQuote' onclick="getQuote()">Get Estimate</button>

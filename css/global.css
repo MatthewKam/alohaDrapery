@@ -10,6 +10,7 @@ body{
 .tal{text-align: left;}
 .tac{text-align: center;}
 .hide{display: none;}
+.bold{font-weight:bold;}
 div#wrap {
     background-color: #ece8e1;
     padding-top:30px;
@@ -91,18 +92,17 @@ div#exclusiveoffer {
 
 }
 .legal_contain {
-    width: 700px;
+    width: 920px;
     margin: 0 auto;
-    height: 540px;
+    height: 600px;
     margin-top: 5%;
     background-color: white;
     padding: 30px;
-   
 }
 .contentcontain {
     overflow-x: scroll;
-    height: 495px;
-    line-height: 27px;	
+    height: 550px;
+    line-height: 27px;
 }
 span.headerLegal {
     text-align: center;
