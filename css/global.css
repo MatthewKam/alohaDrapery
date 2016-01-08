@@ -231,3 +231,22 @@ a.legal_trigger {
 a.legal_trigger:hover {
     text-decoration: underline;
 }
+div#footerright .ds {
+    font-size: 24px;
+}
+img#installationImage {
+    width: 450px;
+}
+div#hangingDraperies {
+    width: 460px;
+}
+h1#hangingDraperiesTitle {
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+

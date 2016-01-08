@@ -71,6 +71,7 @@ button.addtocart{
     margin-left: 10px;
     font-size: 15px;
     padding: 0 15px;
+    cursor: pointer;    
 }
 
 
@@ -101,12 +102,13 @@ div#orderform {
         padding-left: 15px;
 }
 div.addmore {
-    margin-top: 10px;
+    margin-top: 0px;
     padding-bottom: 10px;
     cursor: pointer;
     display: inline-block;
     position: relative;
     width: 60px;
+    font-size:24px;
     text-align: right;
 }
 .aandd {
@@ -686,3 +688,6 @@ span.headerLegal {
     margin-top: 20px;
 }
 
+div#delete9 {
+    margin-right: 65px;
+}
