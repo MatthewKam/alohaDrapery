@@ -19,3 +19,6 @@ div#body p{
 	text-decoration: underline;
 	margin-top: 5px;
 }
+div.washingDescription {
+    width: 190px;
+}
