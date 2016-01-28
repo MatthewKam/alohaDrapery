@@ -128,27 +128,34 @@ div#toplabels {
 }
 div#quantityLabel {
     margin-top: -10px;
+    width: 65px;
 }
 div#fabricLabel {
-    width: 200px;
+    width: 195px;
 }
 div#liningLabel {
-    width: 200px;
+    width: 195px;
 }
 div#leftreturn {
-    width: 100px;
+    width: 75px;
     margin-left:0;
 }
 div#rightreturn {
-    width: 100px;
+    width: 75px;
     margin-left: 0;
+}
+div#widthLabel {
+    width: 130px;
+}
+div#heightLabel {
+    width: 135px;
 }
 input.orderinfo {
     width: 95px;
     height: 35px;
     border: 1px solid lightgrey;
     border-radius: 5px;
-    margin-left: 5px;
+    /*margin-left: 5px;*/
     margin-top: 7px;
     margin-bottom: 7px;
     font-size: 14px;
@@ -158,7 +165,7 @@ input.orderinfo {
     font-size: 15px;
     border: 1px solid lightgrey;
     width: 200px;
-    margin-left: 5px;
+    /*margin-left: 5px;*/
     height: 35px;
     margin-top: 7px;
 }
@@ -166,7 +173,7 @@ input.orderinfo {
     font-size: 15px;
     border: 1px solid lightgrey;
     width: 200px;
-    margin-left: 5px;
+    /*margin-left: 5px;*/
     height: 35px;
     margin-top: 7px;
 }
@@ -657,3 +664,44 @@ span.headerLegal.ds {
 div#delete9 {
     margin-right: 65px;
 }
+div.quantity input {
+    width: 70px;
+}
+
+div.width input {
+    width: 75px;
+}
+div.leftreturn input {
+    width: 75px;
+}
+div.rightreturn input {
+    width: 75px;
+}
+div.height input {
+    width: 75px;
+}
+.fractions select {
+    height: 35px;
+    border: 1px solid lightgrey;
+    background-color: white;
+    font-size: 14px;
+    width: 55px;
+    margin-top: 7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

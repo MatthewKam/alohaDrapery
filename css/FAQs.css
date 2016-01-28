@@ -22,3 +22,9 @@ div#body p{
 div.washingDescription {
     width: 190px;
 }
+div#fireResist img {
+    width: 100px;
+}
+a#installationLink {
+    display: inline-block;
+}

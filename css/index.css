@@ -623,9 +623,10 @@ img.washInstructions.ib {
     width: 40px;
 }
 .flameResistant {
-    margin-top: 7px;
+    margin-top: -3px;
     font-size: 24px;
     font-style: italic;
+    margin-right: 10px;
 }
 .orderbutton {
     background-color: #ff9966;
@@ -880,4 +881,9 @@ div#attachedLiningContain p {
     100% {
         opacity:0
     }
+}
+.frLabel {
+    font-size: 14px;
+    display: block;
+    margin-top: -2px;
 }
